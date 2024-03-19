@@ -7,11 +7,15 @@ import React, {  useState } from "react";
 import { MdEvent } from "react-icons/md";
 import { RxActivityLog } from "react-icons/rx";
 import { FaUsers } from "react-icons/fa";
+import { MdDashboard } from "react-icons/md";
+
+import useSidebarStore from "../app/admin/hooks/Store/useSidebarStore";
 
 const AdminSidebar = () => {
-
-  const [openMenu , setOpenMenu] = useState(true);
-  console.log(openMenu);
+  
+  const sideBar= useSidebarStore();
+  
+  
 
   return (
     <div
@@ -19,13 +23,11 @@ const AdminSidebar = () => {
        `}
     >
       <div className={`bg-black fixed p-50 text-white h-full w-[208px] flex flex-col items-center justify-center
-           ${openMenu ? '' : 'hidden'}`}
+           ${sideBar.isOpen ? '' : 'hidden'}`}
       >
         <div
           className='absolute  text-white top-2 right-2 cursor-pointer hover:scale-105 transition  md:hidden'
-          onClick={() => {
-            setOpenMenu(!openMenu);
-          }}
+          onClick={sideBar.onClose}
         >
           <IoCloseSharp size={32} />
         </div>
@@ -37,10 +39,11 @@ const AdminSidebar = () => {
           className='pt-5 pb-5'
         />
 
-        <div className='flex flex-col h-screen overflow-y-auto'>
-          <AdminSidebarLink title='Events' to='/' icon={MdEvent} />
-          <AdminSidebarLink title='Activity' to='/' icon={RxActivityLog} />
-          <AdminSidebarLink title='Members' to='/' icon={FaUsers} />
+        <div className='flex flex-col  h-screen overflow-y-auto w-full'>
+          <AdminSidebarLink title='Overview' to='/admin/overview' icon={MdDashboard} />
+          <AdminSidebarLink title='Events' to='/admin/events' icon={MdEvent} />
+          <AdminSidebarLink title='Activity' to='/admin/activity' icon={RxActivityLog} />
+          <AdminSidebarLink title='Members' to='/admin/members' icon={FaUsers} />
           
         </div>
       </div>

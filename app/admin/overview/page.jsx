@@ -1,10 +1,14 @@
+import AdminNavbar from "../../../components/AdminNavbar";
 import AdminSidebar from "../../../components/AdminSidebar";
-import React from "react";
+
 
 const Dashboard = () => {
+  
   return (
     <div className=''>
-      <AdminSidebar />
+      <AdminSidebar  />
+      <AdminNavbar/>
+      
       <div className='pl-[218px] pt-2'>asd</div>
     </div>
   );
