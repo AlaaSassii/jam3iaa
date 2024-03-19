@@ -3,10 +3,10 @@ import React, { useContext } from "react";
 import { IoMenuSharp } from "react-icons/io5";
 import { FaUserCircle } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
-import useSidebarStore from "../app/admin/hooks/Store/useSidebarStore";
+import useSidebarStore from "../hooks/Store/useSidebarStore";
 
 
-const AdminNavbar = () => {
+const AdminNavbar = ({title}) => {
 
     const sideBar = useSidebarStore();
 
@@ -20,7 +20,7 @@ const AdminNavbar = () => {
         >
           <IoMenuSharp size={26} onClick={()=>{sideBar.isOpen ? sideBar.onClose():sideBar.onOpen()}} />
         </div>
-        <div className='ml-10 font-bold'>dd</div>
+        <div className='ml-10 font-bold'>{title}</div>
       </div>
 
       <div className='flex justify-center items-center gap-3 mr-0 cursor-pointer hover:bg-neutral-200 transition p-2 rounded'>

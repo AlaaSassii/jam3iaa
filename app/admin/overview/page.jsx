@@ -7,9 +7,9 @@ const Dashboard = () => {
   return (
     <div className=''>
       <AdminSidebar  />
-      <AdminNavbar/>
+      <AdminNavbar title={"Overview"}/>
       
-      <div className='pl-[218px] pt-2'>asd</div>
+      <div className='md:pl-[218px] pt-2'>asd</div>
     </div>
   );
 };

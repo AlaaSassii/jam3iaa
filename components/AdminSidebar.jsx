@@ -9,7 +9,7 @@ import { RxActivityLog } from "react-icons/rx";
 import { FaUsers } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
 
-import useSidebarStore from "../app/admin/hooks/Store/useSidebarStore";
+import useSidebarStore from "../hooks/Store/useSidebarStore";
 
 const AdminSidebar = () => {
   
