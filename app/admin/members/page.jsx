@@ -3,11 +3,16 @@ import AdminSidebar from "../../../components/AdminSidebar";
 import AdminNavbar from "../../../components/AdminNavbar";
 import ModalCreateMember from "../../../components/ModalCreateMember";
 import TableMember from "../../../components/TableMember";
-import { useCreateMember } from "../../../hooks/Store/useCreateMember";
+import { PrefixPathnameNormalizer } from "next/dist/server/future/normalizers/request/prefix";
+
 const page = () => {
-  const { members } = useCreateMember((state) => ({
-    members: state.members,
-  }));
+
+  const members = [
+    { nom: "rayen", prenom: "benhassen", age: 32 },
+    
+    // Add more member objects as needed
+  ];
+
   return (
     <div className=''>
       <AdminSidebar />
