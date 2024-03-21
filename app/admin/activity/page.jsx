@@ -3,19 +3,21 @@ import AdminNavbar from "../../../components/AdminNavbar";
 import AdminSidebar from "../../../components/AdminSidebar";
 import ModalCreateActivity from "../../../components/ModalCreateActivity"; // Updated import
 import { useCreateActivity } from "../../../hooks/Store/useCreateActivity"; // Updated import
-import React from "react";
+import React, { useEffect } from "react";
 import InfoCard from "../../../components/InfoCard";
+import { deleteActivity, getActivity } from "../../../firebase/activity";
 
 const Page = () => {
   // Renamed function to start with a capital letter
   const {
     getInputs,
     openModal,
-    deleteActivity, // Updated function name
+    deleteActivity: deleteActivityF, // Updated function name
     handleEditInput,
     changeStatus,
     changeId,
     activities, // Updated state property name
+    getActivities,
   } = useCreateActivity((state) => ({
     getInputs: state.getInputs,
     openModal: state.openModal,
@@ -23,8 +25,21 @@ const Page = () => {
     handleEditInput: state.handleEditInput,
     changeStatus: state.changeStatus,
     changeId: state.changeId,
-    activities: state.activities, // Updated state property name
+    activities: state.activities,
+    getActivities: state.getActivities,
   }));
+  const deleteActivityFunction = (id) => {
+    deleteActivity(id)
+      .then((res) => deleteActivityF(id))
+      .catch((err) => console.log(err));
+  };
+  useEffect(() => {
+    getActivity()
+      .then((data) => {
+        getActivities(data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
 
   return (
     <div className=''>
@@ -47,7 +62,7 @@ const Page = () => {
                 changeId={changeId}
                 changeStatus={changeStatus}
                 handleEditInput={handleEditInput}
-                deleteFunction={deleteActivity} // Updated function name
+                deleteFunction={deleteActivityFunction} // Updated function name
                 openModal={openModal}
                 key={activity.id} // Updated variable name
               />

@@ -5,7 +5,8 @@ export const useCreateEvent = create(set => ({
     openModal: () => set({ modalOpen: true }),
     closeModal: () => set({ modalOpen: false }),
     events: [],
-    addEvents: (event) => set(state => ({ ...state, events: [...state.events, { ...event, id: new Date().getTime() }] })),
+    getEvent: (events) => set({ events }),
+    addEvents: (event, id) => set(state => ({ ...state, events: [...state.events, { ...event, id }] })),
     deleteEvent: (id) => set(state => ({ ...state, events: state.events.filter(event => event.id !== id) })),
     updateEvent: (event, id) => set(state => ({
         ...state, events: [...state.events.map(e => id === e.id ? { ...event, id } : e)]

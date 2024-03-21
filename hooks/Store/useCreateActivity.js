@@ -5,7 +5,8 @@ export const useCreateActivity = create(set => ({
     openModal: () => set({ modalOpen: true }),
     closeModal: () => set({ modalOpen: false }),
     activities: [],
-    addActivity: (activity) => set(state => ({ ...state, activities: [...state.activities, { ...activity, id: new Date().getTime() }] })),
+    getActivities: (activities) => set({ activities }),
+    addActivity: (activity, id) => set(state => ({ ...state, activities: [...state.activities, { ...activity, id }] })),
     deleteActivity: (id) => set(state => ({ ...state, activities: state.activities.filter(activity => activity.id !== id) })),
     updateActivity: (activity, id) => set(state => ({
         ...state, activities: [...state.activities.map(a => id === a.id ? { ...activity, id } : a)]

@@ -5,6 +5,13 @@ import { v4 } from "uuid";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { storage } from "../firebase/firebase";
 import { useCreateEvent } from "../hooks/Store/useCreateEvent";
+import {
+  createEvent,
+  deleteEvent,
+  editEvent,
+  getEvents,
+  updateEvent,
+} from "../firebase/event";
 const ModalCreateEvent = () => {
   const {
     addEvents,
@@ -32,40 +39,55 @@ const ModalCreateEvent = () => {
     events: state.events,
   }));
 
-  const [uploadImageLoading, setUploadImageLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const uploadFile = (imageUpload) => {
     if (imageUpload == null) return;
-    setUploadImageLoading(true);
+    setLoading(true);
     const imageRef = ref(storage, `images/${imageUpload.name + v4()}`);
     uploadBytes(imageRef, imageUpload)
       .then((snapshot) => {
         getDownloadURL(snapshot.ref).then((url) => {
-          setUploadImageLoading(false);
+          setLoading(false);
           getInputs("image", url);
         });
       })
       .catch((error) => {
         console.error("Error uploading file: ", error);
-        setUploadImageLoading(false);
+        setLoading(false);
       });
   };
-  const handleFileChange = (e) => {
-    if (e.target.files) {
-      getInputs("image", e.target.files[0]);
-    }
-  };
+
   const handleClick = () => {
     if (status === "create") {
       if (inputs.name && inputs.description && inputs.date && inputs.image) {
-        addEvents(inputs);
-        clearInputs();
+        console.log("asdsd");
+        setLoading(true);
+
+        createEvent(inputs.name, inputs.description, inputs.image, inputs.date)
+          .then((id) => {
+            addEvents(inputs, id);
+            clearInputs();
+            setLoading(false);
+          })
+          .catch((err) => {
+            setLoading(false);
+          });
       } else {
         alert("false");
       }
     } else if (status === "edit") {
-      updateEvent({ ...inputs }, id);
-      console.log(events);
+      setLoading(true);
+      editEvent(id, inputs.name, inputs.description, inputs.image, inputs.date)
+        .then((res) => {
+          updateEvent({ ...inputs }, id);
+          console.log(events);
+          setLoading(false);
+        })
+        .catch((err) => {
+          console.error(err);
+          setLoading(false);
+        });
     }
   };
 
@@ -116,7 +138,7 @@ const ModalCreateEvent = () => {
               className='file-input file-input-bordered w-full max-w-xs'
               onChange={(e) => uploadFile(e.target.files[0])}
               value=''
-              disabled={uploadImageLoading}
+              disabled={loading}
             />
             <label htmlFor=''>Date</label>
             <input
@@ -129,9 +151,9 @@ const ModalCreateEvent = () => {
             <button
               className='btn btn-outline btn-accent w-fit flex '
               onClick={handleClick}
-              disable={uploadImageLoading}
+              disable={loading}
             >
-              {uploadImageLoading ? (
+              {loading ? (
                 <span className='loading loading-spinner loading-sm'></span>
               ) : status === "create" ? (
                 "Submit"

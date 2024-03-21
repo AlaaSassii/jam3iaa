@@ -3,17 +3,20 @@ import AdminNavbar from "../../../components/AdminNavbar";
 import AdminSidebar from "../../../components/AdminSidebar";
 import ModalCreateEvent from "../../../components/ModalCreateEvent";
 import { useCreateEvent } from "../../../hooks/Store/useCreateEvent";
-import React from "react";
+import React, { useEffect } from "react";
 import InfoCard from "../../../components/InfoCard";
+import { deleteEvent, getEvents } from "../../../firebase/event";
 const page = () => {
   const {
     getInputs,
     openModal,
-    deleteEvent,
+    deleteEvent: deleteEventF,
+    addEvents,
     handleEditInput,
     changeStatus,
     changeId,
     events,
+    getEvent,
   } = useCreateEvent((state) => ({
     getInputs: state.getInputs,
     openModal: state.openModal,
@@ -22,7 +25,22 @@ const page = () => {
     changeStatus: state.changeStatus,
     changeId: state.changeId,
     events: state.events,
+    addEvents: state.addEvents,
+    getEvent: state.getEvent,
   }));
+  const deleteEventFunction = (id) => {
+    deleteEvent(id)
+      .then((res) => deleteEventF(id))
+      .catch((err) => console.log(err));
+  };
+  useEffect(() => {
+    getEvents()
+      .then((data) => {
+        getEvent(data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <div className=''>
       <AdminSidebar />
@@ -41,7 +59,7 @@ const page = () => {
               changeId={changeId}
               changeStatus={changeStatus}
               handleEditInput={handleEditInput}
-              deleteFunction={deleteEvent}
+              deleteFunction={deleteEventFunction}
               openModal={openModal}
               key={event.id}
             />

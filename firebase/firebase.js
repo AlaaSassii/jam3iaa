@@ -3,13 +3,13 @@ import { getStorage } from "firebase/storage";
 import { getFirestore } from "@firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyA3V3p34DObni5d-FkrP5Xx7a97QEbZ-3A",
-    authDomain: "jam3ia-images.firebaseapp.com",
-    projectId: "jam3ia-images",
-    storageBucket: "jam3ia-images.appspot.com",
-    messagingSenderId: "620222034890",
-    appId: "1:620222034890:web:6b3259723b15ab7d189533",
-    measurementId: "G-VJ1WQBN3MR"
+    apiKey: "AIzaSyDuwu_eDUFtdo3gPBRlgol0W64511kbxOk",
+    authDomain: "jam3ia-eya.firebaseapp.com",
+    projectId: "jam3ia-eya",
+    storageBucket: "jam3ia-eya.appspot.com",
+    messagingSenderId: "648212172813",
+    appId: "1:648212172813:web:da686b3c112967e659c544",
+    measurementId: "G-VLCQ13ZQGJ"
 };
 
 const app = initializeApp(firebaseConfig);

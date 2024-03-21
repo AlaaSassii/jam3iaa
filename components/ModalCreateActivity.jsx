@@ -4,6 +4,7 @@ import { useCreateActivity } from "../hooks/Store/useCreateActivity";
 import { v4 } from "uuid";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { storage } from "../firebase/firebase";
+import { createActivity, editActivity } from "../firebase/activity";
 
 const ModalCreateActivity = () => {
   const {
@@ -31,22 +32,22 @@ const ModalCreateActivity = () => {
     changeStatus: state.changeStatus,
     activities: state.activities,
   }));
-  const [uploadImageLoading, setUploadImageLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const uploadFile = (imageUpload) => {
     if (imageUpload == null) return;
-    setUploadImageLoading(true);
+    setLoading(true);
     const imageRef = ref(storage, `images/${imageUpload.name + v4()}`);
     uploadBytes(imageRef, imageUpload)
       .then((snapshot) => {
         getDownloadURL(snapshot.ref).then((url) => {
-          setUploadImageLoading(false);
+          setLoading(false);
           getInputs("image", url);
         });
       })
       .catch((error) => {
         console.error("Error uploading file: ", error);
-        setUploadImageLoading(false);
+        setLoading(false);
       });
   };
   const handleFileChange = (e) => {
@@ -57,15 +58,42 @@ const ModalCreateActivity = () => {
   const handleClick = () => {
     if (status === "create") {
       if (inputs.name && inputs.description && inputs.date && inputs.image) {
-        addActivity(inputs);
-        clearInputs();
+        setLoading(true);
+        createActivity(
+          inputs.name,
+          inputs.description,
+          inputs.image,
+          inputs.date
+        )
+          .then((id) => {
+            addActivity(inputs, id);
+            clearInputs();
+            setLoading(false);
+          })
+          .catch((err) => {
+            setLoading(false);
+          });
       } else {
         alert("false");
         console.log({ name, description, date });
       }
-    } else if (status === "edit") {
-      updateActivity({ ...inputs, id }, id);
-      console.log(activities);
+    } else {
+      setLoading(true);
+      editActivity(
+        id,
+        inputs.name,
+        inputs.description,
+        inputs.image,
+        inputs.date
+      )
+        .then((res) => {
+          updateActivity({ ...inputs }, id);
+          setLoading(false);
+        })
+        .catch((err) => {
+          console.error(err);
+          setLoading(false);
+        });
     }
   };
 
@@ -115,7 +143,7 @@ const ModalCreateActivity = () => {
               className='file-input file-input-bordered w-full max-w-xs'
               onChange={(e) => uploadFile(e.target.files[0])}
               value=''
-              disabled={uploadImageLoading}
+              disabled={loading}
             />
             <label htmlFor=''>Date</label>
             <input
@@ -128,9 +156,9 @@ const ModalCreateActivity = () => {
             <button
               className='btn btn-outline btn-accent w-fit flex '
               onClick={handleClick}
-              disable={uploadImageLoading}
+              disable={loading}
             >
-              {uploadImageLoading ? (
+              {loading ? (
                 <span className='loading loading-spinner loading-sm'></span>
               ) : status === "create" ? (
                 "Submit"
