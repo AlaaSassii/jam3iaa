@@ -1,8 +1,9 @@
+"use client"
 import AdminSidebar from '../components/AdminSidebar'
-import React from 'react'
-
+import React, { useEffect } from 'react'
+import axios from 'axios'
 const Home = () => {
-  
+
   return (
     <div>
       <AdminSidebar />
