@@ -1,4 +1,3 @@
-"use client";
 import React, { useEffect, useState } from "react";
 import { useCreateActivity } from "../hooks/Store/useCreateActivity";
 import { v4 } from "uuid";
@@ -12,6 +11,7 @@ import {
   getEvents,
   updateEvent,
 } from "../firebase/event";
+
 const ModalCreateEvent = () => {
   const {
     addEvents,
@@ -64,7 +64,14 @@ const ModalCreateEvent = () => {
         console.log("asdsd");
         setLoading(true);
 
-        createEvent(inputs.name, inputs.description, inputs.image, inputs.date)
+        createEvent(
+          inputs.name,
+          inputs.description,
+          inputs.image,
+          inputs.date,
+          inputs.address,
+          inputs.time
+        )
           .then((id) => {
             addEvents(inputs, id);
             clearInputs();
@@ -74,11 +81,19 @@ const ModalCreateEvent = () => {
             setLoading(false);
           });
       } else {
-        alert("false");
+        alert("Please fill in all fields.");
       }
     } else if (status === "edit") {
       setLoading(true);
-      editEvent(id, inputs.name, inputs.description, inputs.image, inputs.date)
+      editEvent(
+        id,
+        inputs.name,
+        inputs.description,
+        inputs.image,
+        inputs.date,
+        inputs.address,
+        inputs.time
+      )
         .then((res) => {
           updateEvent({ ...inputs }, id);
           console.log(events);
@@ -147,6 +162,22 @@ const ModalCreateEvent = () => {
               className='input input-bordered w-[150%] max-w-xs'
               onChange={(e) => getInputs("date", e.target.value)}
               value={inputs.date}
+            />
+            <label htmlFor=''>Address</label>
+            <input
+              type='text'
+              placeholder='Address'
+              className='input input-bordered w-[150%] max-w-xs'
+              onChange={(e) => getInputs("address", e.target.value)}
+              value={inputs.address}
+            />
+            <label htmlFor=''>Time</label>
+            <input
+              type='text'
+              placeholder='Time'
+              className='input input-bordered w-[150%] max-w-xs'
+              onChange={(e) => getInputs("time", e.target.value)}
+              value={inputs.time}
             />
             <button
               className='btn btn-outline btn-accent w-fit flex '

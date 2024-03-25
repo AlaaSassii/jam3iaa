@@ -15,7 +15,9 @@ export const useCreateEvent = create(set => ({
         name: '',
         description: '',
         image: '',
-        date: ''
+        date: '',
+        address: '', // Added address field
+        time: ''     // Added time field
     },
     getInputs: (key, value) => {
         set(state => ({
@@ -31,7 +33,9 @@ export const useCreateEvent = create(set => ({
             name: '',
             description: '',
             image: '',
-            date: ''
+            date: '',
+            address: '', // Added address field
+            time: ''     // Added time field
         }
     }),
     status: 'create',

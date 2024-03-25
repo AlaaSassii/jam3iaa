@@ -6,7 +6,15 @@ import { useCreateEvent } from "../../../hooks/Store/useCreateEvent";
 import React, { useEffect } from "react";
 import InfoCard from "../../../components/InfoCard";
 import { deleteEvent, getEvents } from "../../../firebase/event";
+import { useAdminPassword } from "../../../hooks/Store/useAdminPassword";
 const page = () => {
+  const { password, passwordStored, storePassword } = useAdminPassword(
+    (state) => ({
+      password: state.password,
+      passwordStored: state.passwordStored,
+      storePassword: state.storePassword,
+    })
+  );
   const {
     getInputs,
     openModal,
@@ -28,11 +36,21 @@ const page = () => {
     addEvents: state.addEvents,
     getEvent: state.getEvent,
   }));
+
   const deleteEventFunction = (id) => {
     deleteEvent(id)
       .then((res) => deleteEventF(id))
       .catch((err) => console.log(err));
   };
+  useEffect(() => {
+    if (!passwordStored) {
+      const userPassword = prompt("Admin password");
+      if (userPassword === password) {
+        storePassword();
+      }
+    }
+  }, []);
+
   useEffect(() => {
     getEvents()
       .then((data) => {
@@ -40,6 +58,7 @@ const page = () => {
       })
       .catch((err) => console.log(err));
   }, []);
+  if (!passwordStored) return null;
 
   return (
     <div className=''>
@@ -55,6 +74,8 @@ const page = () => {
               name={event.name}
               description={event.description}
               date={event.date}
+              address={event.address}
+              time={event.time}
               getInputs={getInputs}
               changeId={changeId}
               changeStatus={changeStatus}

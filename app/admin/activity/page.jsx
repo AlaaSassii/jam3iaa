@@ -5,10 +5,18 @@ import ModalCreateActivity from "../../../components/ModalCreateActivity"; // Up
 import { useCreateActivity } from "../../../hooks/Store/useCreateActivity"; // Updated import
 import React, { useEffect } from "react";
 import InfoCard from "../../../components/InfoCard";
-import { deleteActivity, getActivity } from "../../../firebase/activity";
+import { deleteActivity, getActivities } from "../../../firebase/activity";
+import { useAdminPassword } from "../../../hooks/Store/useAdminPassword";
 
 const Page = () => {
-  // Renamed function to start with a capital letter
+  const { password, passwordStored, storePassword } = useAdminPassword(
+    (state) => ({
+      password: state.password,
+      passwordStored: state.passwordStored,
+      storePassword: state.storePassword,
+    })
+  );
+
   const {
     getInputs,
     openModal,
@@ -17,7 +25,7 @@ const Page = () => {
     changeStatus,
     changeId,
     activities, // Updated state property name
-    getActivities,
+    getActivities: getActivitiesFunction,
   } = useCreateActivity((state) => ({
     getInputs: state.getInputs,
     openModal: state.openModal,
@@ -34,13 +42,22 @@ const Page = () => {
       .catch((err) => console.log(err));
   };
   useEffect(() => {
-    getActivity()
+    if (!passwordStored) {
+      const userPassword = prompt("Admin password");
+      if (userPassword === password) {
+        storePassword();
+      }
+    }
+  }, []);
+  useEffect(() => {
+    getActivities()
       .then((data) => {
-        getActivities(data);
+        getActivitiesFunction(data);
       })
       .catch((err) => console.log(err));
   }, []);
 
+  if (!passwordStored) return null;
   return (
     <div className=''>
       <AdminSidebar />
@@ -56,6 +73,8 @@ const Page = () => {
                 id={activity.id} // Updated variable name
                 image={activity.image} // Updated variable name
                 name={activity.name} // Updated variable name
+                time={activity.time} // Updated variable name
+                address={activity.address} // Updated variable name
                 description={activity.description} // Updated variable name
                 date={activity.date} // Updated variable name
                 getInputs={getInputs}

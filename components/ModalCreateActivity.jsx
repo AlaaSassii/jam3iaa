@@ -1,4 +1,3 @@
-"use client";
 import React, { useEffect, useState } from "react";
 import { useCreateActivity } from "../hooks/Store/useCreateActivity";
 import { v4 } from "uuid";
@@ -50,8 +49,10 @@ const ModalCreateActivity = () => {
         setLoading(false);
       });
   };
+
   const handleFileChange = (e) => {
     if (e.target.files) {
+      uploadFile(e.target.files[0]);
     }
   };
 
@@ -63,7 +64,9 @@ const ModalCreateActivity = () => {
           inputs.name,
           inputs.description,
           inputs.image,
-          inputs.date
+          inputs.date,
+          inputs.address,
+          inputs.time
         )
           .then((id) => {
             addActivity(inputs, id);
@@ -72,10 +75,10 @@ const ModalCreateActivity = () => {
           })
           .catch((err) => {
             setLoading(false);
+            console.error(err);
           });
       } else {
-        alert("false");
-        console.log({ name, description, date });
+        alert("Please fill in all required fields.");
       }
     } else {
       setLoading(true);
@@ -84,7 +87,9 @@ const ModalCreateActivity = () => {
         inputs.name,
         inputs.description,
         inputs.image,
-        inputs.date
+        inputs.date,
+        inputs.address,
+        inputs.time
       )
         .then((res) => {
           updateActivity({ ...inputs }, id);
@@ -130,7 +135,7 @@ const ModalCreateActivity = () => {
               onChange={(e) => getInputs("name", e.target.value)}
               value={inputs.name}
             />
-            <label htmlFor=''>Activity Description</label> {/* Updated label */}
+            <label htmlFor=''>Activity Description</label>
             <textarea
               className='textarea textarea-bordered w-full'
               placeholder='Activity Description'
@@ -141,7 +146,7 @@ const ModalCreateActivity = () => {
             <input
               type='file'
               className='file-input file-input-bordered w-full max-w-xs'
-              onChange={(e) => uploadFile(e.target.files[0])}
+              onChange={handleFileChange}
               value=''
               disabled={loading}
             />
@@ -153,10 +158,26 @@ const ModalCreateActivity = () => {
               onChange={(e) => getInputs("date", e.target.value)}
               value={inputs.date}
             />
+            <label htmlFor=''>Address</label>
+            <input
+              type='text'
+              placeholder='Address'
+              className='input input-bordered w-[150%] max-w-xs'
+              onChange={(e) => getInputs("address", e.target.value)}
+              value={inputs.address}
+            />
+            <label htmlFor=''>Time</label>
+            <input
+              type='text'
+              placeholder='Time'
+              className='input input-bordered w-[150%] max-w-xs'
+              onChange={(e) => getInputs("time", e.target.value)}
+              value={inputs.time}
+            />
             <button
               className='btn btn-outline btn-accent w-fit flex '
               onClick={handleClick}
-              disable={loading}
+              disabled={loading}
             >
               {loading ? (
                 <span className='loading loading-spinner loading-sm'></span>
