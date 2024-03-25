@@ -20,7 +20,7 @@ const Navbar = () => {
 
     return (
         <div className=''>
-            <div className="flex justify-between md:justify-around  items-center bg-rose-200">
+            <div className="flex justify-between md:justify-around  items-center bg-rose-200 z-100000">
                 <img
                 src={'/images/logo.png'}
                 width={80}
@@ -32,8 +32,8 @@ const Navbar = () => {
                 <ul className={`absolute flex-col bg-neutral-800 p-10 gap-5 top-0 w-full md:w-auto md:flex-row md:bg-transparent md:p-2 md:gap-0 md:relative flex justify-center items-center text-rose-600 md:text-rose-600 font-semibold ${isMenuOpen ? '' : 'hidden '}`}>
                     <li className="cursor-pointer px-2 hover:text-black transition"><a href="#home">Accueil</a></li>
                     <li className="cursor-pointer px-2 hover:text-black transition"><a href="#about">À propos nous</a></li>
-                    <li className="cursor-pointer px-2 hover:text-black transition"><a href="#events">événements</a></li>
-                    <li className="cursor-pointer px-2 hover:text-black transition"><a href="#activity">activités</a></li>
+                    <li className="cursor-pointer px-2 hover:text-black transition"><a href="home/events">événements</a></li>
+                    <li className="cursor-pointer px-2 hover:text-black transition"><a href="home/activities">activités</a></li>
                     <li className="cursor-pointer px-2 hover:text-black transition"><a href="#contact">Contactez-nous</a></li>
                     <IoMdClose size={30} className="md:hidden absolute top-5 right-5 " onClick={toggleMenu}/>
                 </ul>
