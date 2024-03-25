@@ -20,7 +20,11 @@ export const createEvent = async (name, description, image, date, address, time)
     return docRef.id;
 };
 
+<<<<<<< HEAD
 export const editEvent = async (id, name, description, image, date, address, time) => {
+=======
+export const editEvent = async (id, name, description, image, date) => {
+>>>>>>> 9eb0c98f7e78f7a81f743f2f2f0c31859b9d8eee
     const eventDoc = doc(db, "events", id);
     const newEvent = { name, description, image, date, address, time };
     await updateDoc(eventDoc, newEvent);
