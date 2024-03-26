@@ -16,7 +16,7 @@ const InfoCard = ({
   time,
 }) => {
   const handleEditClick = () => {
-    handleEditInput({ image, name, description, date });
+    handleEditInput({ image, name, description, date, address, time });
     document.getElementById("my_modal_3").showModal();
     changeStatus("edit");
     changeId(id);

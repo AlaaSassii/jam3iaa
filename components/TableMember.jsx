@@ -1,13 +1,12 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useCreateMember } from "../hooks/Store/useCreateMember";
-import { getMembers } from "../firebase/memeber";
+import { createMember, getMembers } from "../firebase/memeber";
 
-const TableMember = () => {
-  const { members, getMembers: getMembersState } = useCreateMember((state) => ({
+const TableMember = ({ persons }) => {
+  const { members, getMembersState } = useCreateMember((state) => ({
     members: state.members,
-    getMembers: state.getMembers,
+    getMembersState: state.getMembers,
   }));
-
   useEffect(() => {
     getMembers().then((res) => {
       getMembersState(res);
@@ -21,11 +20,11 @@ const TableMember = () => {
         <thead>
           <tr>
             <th></th>
-            <th>Nom</th> {/* Updated header */}
-            <th>Prenom</th> {/* Updated header */}
+            <th>Nom</th>
+            <th>Prenom</th>
             <th>Age</th>
-            <th>PhoneNumber</th> {/* Added header for PhoneNumber */}
-            <th>Email</th> {/* Added header for Email */}
+            <th>PhoneNumber</th>
+            <th>Email</th>
           </tr>
         </thead>
         <tbody>
@@ -35,9 +34,7 @@ const TableMember = () => {
               <td>{member.nom}</td>
               <td>{member.prenom}</td>
               <td>{member.age}</td>
-              <td>{member.phoneNumber}</td>{" "}
-              {/* Added table cell for PhoneNumber */}
-              <td>{member.email}</td> {/* Added table cell for Email */}
+              <td>{member.phoneNumber}</td> <td>{member.email}</td>
             </tr>
           ))}
         </tbody>

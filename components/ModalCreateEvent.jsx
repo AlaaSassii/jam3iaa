@@ -157,7 +157,7 @@ const ModalCreateEvent = () => {
             />
             <label htmlFor=''>Date</label>
             <input
-              type='text'
+              type='date'
               placeholder='Date'
               className='input input-bordered w-[150%] max-w-xs'
               onChange={(e) => getInputs("date", e.target.value)}
