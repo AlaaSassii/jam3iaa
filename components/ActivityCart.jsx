@@ -25,7 +25,7 @@ const ActivityCart = ({title,path,disc,adress}) => {
                           </div>
                       </div>
                       
-                      <p className='text-xs '><div className='font-semibold text-xs md:text-sm'>Description :</div>{disc}</p>
+                      <div className='text-xs '><div className='font-semibold text-xs md:text-sm'>Description :</div>{disc}</div>
                   </div>
                   
               </div>

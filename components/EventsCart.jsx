@@ -35,12 +35,12 @@ const EventsCart = ({ title, path, disc, adress, link }) => {
             </div>
           </div>
 
-          <p className='text-xs '>
+          <div className='text-xs '>
             <div className='font-semibold text-xs md:text-sm'>
               Description :
             </div>
             {disc}
-          </p>
+          </div>
         </div>
       </div>
     </div>
