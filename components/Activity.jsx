@@ -2,10 +2,14 @@
 import React from 'react'
 import ActivityCard from "./ActivityCart";
 
+import { components } from "../lang";
+import { useLanguage } from "../hooks/useLanguage";
+
 const Activity = () => {
+  const { language, setLanguage } = useLanguage();
   return (
     <div className='flex flex-col items-center gap-4 my-20' id='activity'>
-        <div className='font-bold text-lg md:text-4xl'>  les trois derniers activités </div>
+        <div className='font-bold text-lg md:text-4xl'> {components.Activity?.[language].title} </div>
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-10 mx-4 '>
 

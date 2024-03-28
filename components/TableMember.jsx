@@ -1,18 +1,31 @@
 import { useEffect, useState } from "react";
 import { useCreateMember } from "../hooks/Store/useCreateMember";
-import { createMember, getMembers } from "../firebase/memeber";
+import { createMember, getMembers , delleteMember } from "../firebase/memeber";
 
 const TableMember = ({ persons }) => {
-  const { members, getMembersState } = useCreateMember((state) => ({
+
+  const handleDelete = async (id) => {
+    try {
+      await deleteMember(id);
+      delleteMember(id);
+      // Handle member deletion from UI or fetch updated member list
+    } catch (error) {
+      console.error("Error deleting member:", error);
+    }
+  };
+
+  const { members, getMembersState , deleteMember } = useCreateMember((state) => ({
     members: state.members,
     getMembersState: state.getMembers,
+    deleteMember: state.deleteMember,
   }));
+
   useEffect(() => {
     getMembers().then((res) => {
       getMembersState(res);
       console.log({ res });
     });
-  }, []);
+  }, [getMembers]);
 
   return (
     <div className='overflow-x-auto'>
@@ -20,11 +33,12 @@ const TableMember = ({ persons }) => {
         <thead>
           <tr>
             <th></th>
-            <th>Nom</th>
+            <th>Noms</th>
             <th>Prenom</th>
             <th>Age</th>
             <th>PhoneNumber</th>
             <th>Email</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -35,6 +49,10 @@ const TableMember = ({ persons }) => {
               <td>{member.prenom}</td>
               <td>{member.age}</td>
               <td>{member.phoneNumber}</td> <td>{member.email}</td>
+              <td>
+                {/* Add delete button */}
+                <button onClick={() => handleDelete(member.id)}>Delete</button>
+              </td>
             </tr>
           ))}
         </tbody>

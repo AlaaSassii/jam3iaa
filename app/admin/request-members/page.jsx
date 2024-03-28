@@ -6,7 +6,10 @@ import { useState, useEffect } from "react";
 import { getPersonData } from "../../../firebase/person";
 import TablePerson from "../../../components/TablePerson";
 import { useAdminPassword } from "../../../hooks/Store/useAdminPassword";
+
+
 const page = () => {
+
   const { password, passwordStored, storePassword } = useAdminPassword(
     (state) => ({
       password: state.password,
@@ -14,6 +17,7 @@ const page = () => {
       storePassword: state.storePassword,
     })
   );
+
   useEffect(() => {
     if (!passwordStored) {
       const userPassword = prompt("Admin password");
@@ -23,12 +27,15 @@ const page = () => {
     }
   }, []);
 
-  if (!passwordStored) return <div></div>;
-  console.log({ storePassword });
+
+
+
+
   return (
     <div className=''>
+      <AdminSidebar/>
       <AdminNavbar title={"Members"} />
-
+      
       <div className='md:pl-[218px] pt-2'>
         <TablePerson />
       </div>

@@ -4,6 +4,7 @@ import { deletePersonRecord, getPersonData } from "../firebase/person";
 import { createMember } from "../firebase/memeber";
 import { IoCheckmarkSharp } from "react-icons/io5";
 import { CgClose } from "react-icons/cg";
+
 const TablePerson = () => {
   const [persons, setPersons] = useState([]);
 
@@ -31,6 +32,8 @@ const TablePerson = () => {
       deletePerson(id);
     });
   };
+
+  
   return (
     <div className='overflow-x-auto'>
       <table className='table'>
