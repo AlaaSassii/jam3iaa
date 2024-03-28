@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { addPersonRecord } from "../firebase/person";
-const ModalRejoigne = () => {
+const ModalRejoigne = ({ language }) => {
   const [formData, setFormData] = useState({
     nom: "",
     prenom: "",

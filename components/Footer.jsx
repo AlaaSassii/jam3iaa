@@ -6,9 +6,7 @@ import { FaTwitter } from "react-icons/fa";
 import { useLanguage } from "../hooks/useLanguage";
 import { components } from "../lang";
 
-const Footer = () => {
-  const { language, setLanguage } = useLanguage();
-
+const Footer = ({ language }) => {
   if (language === "ar")
     return (
       <div>

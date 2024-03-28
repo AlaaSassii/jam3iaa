@@ -26,7 +26,7 @@ export const editMember = async (id, nom, prenom, age, phoneNumber, email) => {
     await updateDoc(memberDoc, updatedData);
 };
 
-export const deleteMember = async (id) => {
+export const delleteMember = async (id) => {
     const memberDoc = doc(db, "members", id);
     await deleteDoc(memberDoc);
 };

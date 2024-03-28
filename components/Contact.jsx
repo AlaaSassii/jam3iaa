@@ -1,8 +1,10 @@
 "use client";
 import { useState } from "react";
 import { addContact } from "../firebase/contact";
+import { components } from "../lang";
 
-const Contact = () => {
+const Contact = ({ language }) => {
+  console.log({ language });
   const [formData, setFormData] = useState({
     title: "",
     description: "",
@@ -39,14 +41,16 @@ const Contact = () => {
       className='flex flex-col items-center gap-4 mt-20 bg-rose-100 p-2'
       id='contact'
     >
-      <div className='font-bold text-lg md:text-4xl'> Contactz-nous </div>
+      <div className='font-bold text-lg md:text-4xl'>
+        {components.contact?.[language].contactnous}
+      </div>
       <div className='w-full '>
         <div className='max-w-3xl mx-auto mt-8 flex flex-col md:flex-row  justify-between items-center gap-10  '>
           <div className='w-full p-3 md:pr-8'>
             <form onSubmit={handleSubmit} className='space-y-4'>
               <div>
                 <label htmlFor='email' className='block mb-1'>
-                  Your Email
+                  {components.contact?.[language].email}
                 </label>
                 <input
                   type='email'
@@ -59,7 +63,7 @@ const Contact = () => {
               </div>
               <div>
                 <label htmlFor='title' className='block mb-1'>
-                  Title
+                  {components.contact?.[language].titre}
                 </label>
                 <input
                   type='text'
@@ -72,7 +76,7 @@ const Contact = () => {
               </div>
               <div>
                 <label htmlFor='description' className='block mb-1'>
-                  Description
+                  {components.contact?.[language].description}
                 </label>
                 <textarea
                   id='description'

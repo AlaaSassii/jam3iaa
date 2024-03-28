@@ -14,10 +14,11 @@ import Footer from "../../components/Footer";
 import { useLanguage } from "../../hooks/useLanguage";
 
 const page = () => {
-  const { language } = useLanguage();
+  const { language, setLanguage } = useLanguage();
+  console.log({ language });
   return (
     <>
-      <Navbar language={language} />
+      <Navbar language={language} setLanguage={setLanguage} />
       <Home language={language} />
       <Welcome language={language} />
       <About language={language} />

@@ -4,8 +4,7 @@ import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { components } from "../lang";
 import { useLanguage } from "../hooks/useLanguage";
-const Navbar = () => {
-  const { language, setLanguage } = useLanguage();
+const Navbar = ({ language, setLanguage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(true);
 
   const toggleMenu = () => {
@@ -45,17 +44,17 @@ const Navbar = () => {
           </li>
           <li className='cursor-pointer px-2 hover:text-black transition'>
             <a href='http://localhost:3000/home/events'>
-              {components.Navbar?.[language]?.Événementso}
+              {components.Navbar?.[language].Événements}
             </a>
           </li>
           <li className='cursor-pointer px-2 hover:text-black transition'>
             <a href='http://localhost:3000/home/activities'>
-              {components.Navbar?.[language]?.Activités}
+              {components.Navbar?.[language].Activités}
             </a>
           </li>
           <li className='cursor-pointer px-2 hover:text-black transition'>
             <a href='http://localhost:3000/home#contact'>
-              {components.Navbar?.[language]?.contactezNous}
+              {components.Navbar?.[language].contactezNous}
             </a>
           </li>
           <IoMdClose
@@ -65,13 +64,14 @@ const Navbar = () => {
           />
         </ul>
         <select
+          className='fixed right-0 top-[50%] py-2 bg-rose-500 text-white'
           defaultValue={language}
           onChange={(e) => {
             setLanguage(e.target.value);
           }}
         >
-          <option value='fr'>Francais</option>
-          <option value='ar'>العربية</option>
+          <option value='fr'>Fr</option>
+          <option value='ar'>Ar</option>
         </select>
         <div
           className='hidden lg:block bg-white text-sm  p-2 my-2 rounded-2xl font-semibold cursor-pointer hover:text-rose-500 '
@@ -79,7 +79,7 @@ const Navbar = () => {
             document.getElementById("my_modal_1").showModal();
           }}
         >
-          Contactez nous
+          {components.Navbar?.[language].contactezNous}
         </div>
 
         <IoMenu
