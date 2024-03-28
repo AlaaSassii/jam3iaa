@@ -15,7 +15,7 @@ const Rejoignez = ({ language }) => {
           document.getElementById("my_modal_1").showModal();
         }}
       >
-        {components.Rejoignez?.[language].rejoignezNous}
+        {components.Rejoignez?.[language]?.rejoignezNous}
       </button>
     </div>
   );

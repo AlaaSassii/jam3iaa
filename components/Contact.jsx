@@ -91,7 +91,7 @@ const Contact = ({ language }) => {
                 type='submit'
                 className='w-full py-2 bg-rose-500 text-white rounded-md hover:bg-rose-600'
               >
-                Send
+                {language === "ar" ? "إرسال" : "Envoyer"}
               </button>
             </form>
           </div>

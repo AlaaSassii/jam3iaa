@@ -26,10 +26,6 @@ const EventsCart = ({ title, path, disc, adress, link }) => {
               <p className='text-xs md:text-sm '>{adress}</p>
             </div>
             <div className='flex gap-2 w-[30%] '>
-              <p className='font-semibold text-xs md:text-sm'>Adresse:</p>
-              <p className='text-xs md:text-sm '>{adress}</p>
-            </div>
-            <div className='flex gap-2 w-[30%] '>
               <p className='font-semibold text-xs md:text-sm'>Date:</p>
               <p className='text-xs md:text-sm '>18/07/2024</p>
             </div>
