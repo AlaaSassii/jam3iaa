@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 export const useLanguage = () => {
     const [language, setLanguage] = useState(() => {
-        return localStorage.getItem('language') || 'ar';
+        return localStorage.getItem('language') || 'fr';
     });
 
     useEffect(() => {
@@ -20,4 +20,3 @@ export const useLanguage = () => {
 
     return { language, getLanguage, setLanguage, setLanguageValue };
 };
-

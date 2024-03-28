@@ -35,27 +35,27 @@ const Navbar = () => {
         >
           <li className='cursor-pointer px-2 hover:text-black transition'>
             <a href='http://localhost:3000/home#home'>
-              {components.Navbar?.[language].Accueil}
+              {components.Navbar?.[language]?.Accueil}
             </a>
           </li>
           <li className='cursor-pointer px-2 hover:text-black transition'>
             <a href='http://localhost:3000/home#about'>
-              {components.Navbar?.[language].aProposNous}
+              {components.Navbar?.[language]?.aProposNous}
             </a>
           </li>
           <li className='cursor-pointer px-2 hover:text-black transition'>
             <a href='http://localhost:3000/home/events'>
-              {components.Navbar.ar.Événements}
+              {components.Navbar?.[language]?.Événementso}
             </a>
           </li>
           <li className='cursor-pointer px-2 hover:text-black transition'>
             <a href='http://localhost:3000/home/activities'>
-              {components.Navbar.ar.Activités}
+              {components.Navbar?.[language]?.Activités}
             </a>
           </li>
           <li className='cursor-pointer px-2 hover:text-black transition'>
             <a href='http://localhost:3000/home#contact'>
-              {components.Navbar.ar.contactezNous}
+              {components.Navbar?.[language]?.contactezNous}
             </a>
           </li>
           <IoMdClose
@@ -68,7 +68,6 @@ const Navbar = () => {
           defaultValue={language}
           onChange={(e) => {
             setLanguage(e.target.value);
-            console.log({ language: e.target.value });
           }}
         >
           <option value='fr'>Francais</option>
