@@ -65,15 +65,14 @@ const Navbar = () => {
             onClick={toggleMenu}
           />
         </ul>
-        <select
+        <select className="fixed right-0 top-[50%] py-2 bg-rose-500 text-white"
           defaultValue={language}
           onChange={(e) => {
             setLanguage(e.target.value);
-            console.log({ language: e.target.value });
           }}
         >
-          <option value='fr'>Francais</option>
-          <option value='ar'>العربية</option>
+          <option value='fr'>Fr</option>
+          <option value='ar'>Ar</option>
         </select>
         <div
           className='hidden lg:block bg-white text-sm  p-2 my-2 rounded-2xl font-semibold cursor-pointer hover:text-rose-500 '
