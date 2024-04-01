@@ -1,13 +1,19 @@
-'use client';
 import { useState, useEffect } from 'react';
 
 export const useLanguage = () => {
     const [language, setLanguage] = useState(() => {
-        return localStorage.getItem('language') || 'fr';
+        if (typeof window !== 'undefined') {
+            return localStorage.getItem('language') || 'fr';
+        } else {
+            return 'fr';
+        }
     });
 
     useEffect(() => {
-        localStorage.setItem('language', language);
+        // Set localStorage only in the browser
+        if (typeof window !== 'undefined') {
+            localStorage.setItem('language', language);
+        }
     }, [language]);
 
     const getLanguage = () => {
