@@ -8,8 +8,10 @@ const page = () => {
   useEffect(() => {
     router.push("/home");
   }, []);
-  
+
   return null;
 };
 
 export default page;
+
+// 4/0AeaYSHDefJK6BfQf0nYC5ZoDX9tgTXvJbGussgdNdnTvnkvVS11U0IVvyGUMSRYVpKIVMA
