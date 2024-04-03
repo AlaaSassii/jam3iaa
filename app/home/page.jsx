@@ -12,6 +12,7 @@ import ModalRejoigne from "../../components/ModalRejoigne";
 import Contact from "../../components/Contact";
 import Footer from "../../components/Footer";
 import { useLanguage } from "../../hooks/useLanguage";
+import ModalDonate from "../../components/ModalDonate";
 
 const page = () => {
   const { language, setLanguage } = useLanguage();
@@ -27,6 +28,7 @@ const page = () => {
       <Events language={language} />
       <Activity language={language} />
       <ModalRejoigne language={language} />
+      <ModalDonate language={language} />
       <Contact language={language} />
       <Footer language={language} />
     </>

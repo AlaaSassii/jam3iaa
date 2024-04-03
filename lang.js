@@ -5,6 +5,7 @@ export const components = {
             aProposNous: 'من نحن',
             Événements: 'الفعاليات',
             Activités: 'الأنشطة',
+            Donate:'اتكفل و اتبرع',
             contactezNous: 'اتصل بنا'
         },
         fr: {
@@ -12,7 +13,8 @@ export const components = {
             aProposNous: 'À propos nous',
             Événements: 'Événements',
             Activités: 'Activités',
-            contactezNous: 'Contactez-nous'
+            Donate:'Sponsor and donate',
+            contactezNous: 'Contactez nous'
         }
     },
 
@@ -148,6 +150,7 @@ export const components = {
 
 
     },
+
     'contact': {
         fr: {
             'contactnous': 'Contactez-nous',
@@ -160,6 +163,39 @@ export const components = {
             'email': 'بريدك الإلكتروني',
             'titre': 'عنوان',
             'description': 'وصف'
+        }
+    },
+
+    'Models': {
+        fr: {
+            nom: 'Nom',
+            prenom: 'Prenom',
+            age: 'Age',
+            number: 'Number',
+            adresse: 'Adresse',
+            sexe: 'Sexe',
+            email: 'Email',
+            Submit:'Envoyer',
+            close:'Fermer',
+            Donate:'Donation',
+            Sponsor:'Sponsor',
+            Donate:'Sponsor and donate',
+            rejoignezNous :'Rejoignez Nous'
+        },
+        ar: {
+            nom: 'الاسم',
+            prenom: 'اللقب',
+            age: 'العمر',
+            number: 'الرقم',
+            adresse: 'العنوان',
+            sexe: 'الجنس',
+            email: 'البريد الإلكتروني',
+            Submit:'أرسل',
+            close:'اغلاق',
+            Donate:'اتبرع',
+            Sponsor:'اتكفل',
+            Donate:'اتكفل و اتبرع',
+            rejoignezNous :'انضم إلينا'
         }
     }
 
