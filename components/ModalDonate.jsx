@@ -23,7 +23,10 @@ const ModalDonate = ({ language, setLanguage }) => {
       [name]: value,
     });
   };
-
+  const selectChange = (e) => {
+    setFormData({ ...formData, typeDonate: e.target.value });
+  };
+  console.log({ formData });
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -71,7 +74,7 @@ const ModalDonate = ({ language, setLanguage }) => {
                     id='typeDnate'
                     name='typeDnate'
                     defaultValue='donate'
-                    onChange={handleChange}
+                    onChange={selectChange}
                     className='w-full px-3 py-2 border rounded-md '
                     required
                   >
