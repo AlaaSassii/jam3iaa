@@ -79,6 +79,14 @@ const ModalCreateActivity = () => {
           });
       } else {
         alert("Please fill in all required fields.");
+        console.log(
+          inputs.name,
+          inputs.description,
+          inputs.image,
+          inputs.date,
+          inputs.address,
+          inputs.time
+        );
       }
     } else {
       setLoading(true);

@@ -50,6 +50,7 @@ const ModalCreateEvent = () => {
         getDownloadURL(snapshot.ref).then((url) => {
           setLoading(false);
           getInputs("image", url);
+          console.log({ url });
         });
       })
       .catch((error) => {
@@ -82,6 +83,7 @@ const ModalCreateEvent = () => {
           });
       } else {
         alert("Please fill in all fields.");
+        console.log(inputs.image);
       }
     } else if (status === "edit") {
       setLoading(true);

@@ -2,13 +2,44 @@
 import { useState } from "react";
 
 import { components } from "../lang";
-
-
+import { createSupport } from "../firebase/support";
 
 const ModalDonate = ({ language, setLanguage }) => {
-    
-    const [formData, setFormData] = useState({
-        typeDnate:"",
+  const [formData, setFormData] = useState({
+    typeDonate: "",
+    nom: "",
+    prenom: "",
+    age: "",
+    number: "",
+    adresse: "",
+    sexe: "",
+    email: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const docId = await createSupport(
+        formData.typeDonate,
+        formData.nom,
+        formData.prenom,
+        formData.age,
+        formData.number,
+        formData.adresse,
+        formData.sexe,
+        formData.email
+      );
+      console.log("Document added with ID: ", docId);
+      setFormData({
+        typeDonate: formData.typeDonate,
         nom: "",
         prenom: "",
         age: "",
@@ -17,67 +48,48 @@ const ModalDonate = ({ language, setLanguage }) => {
         sexe: "",
         email: "",
       });
-    
-      const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-          ...formData,
-          [name]: value,
-        });
-      };
-    
-      const handleSubmit = async (e) => {
-        e.preventDefault();
-        // Call the Firebase function to add person record
-        /*try {
-          const docId = await addPersonRecord(
-            formData.typeDnate,
-            formData.nom,
-            formData.prenom,
-            formData.age,
-            formData.number,
-            formData.adresse,
-            formData.sexe,
-            formData.email
-          );
-          console.log("Document added with ID: ", docId);
-          // Reset form data to initial state
-          setFormData({
-            typeDnate:"",
-            nom: "",
-            prenom: "",
-            age: "",
-            number: "",
-            adresse: "",
-            sexe: "",
-            email: "",
-          });
-        } catch (error) {
-          console.error("Error adding document: ", error);
-        }*/
+    } catch (error) {
+      console.error("Error adding document: ", error);
+    }
 
-        console.log(formData);
-        console.log(language);
-      };
+    console.log(formData);
+    console.log(language);
+  };
   return (
     <div>
-      <dialog id='my_modal_2'  className={`modal ${(language === "ar") ? 'text-end' :'' } `}>
+      <dialog
+        id='my_modal_2'
+        className={`modal ${language === "ar" ? "text-end" : ""} `}
+      >
         <div className='modal-box bg-white'>
-          <h3 className='font-bold text-lg'> {components.Models?.[language].Donate} !!</h3>
+          <h3 className='font-bold text-lg'>
+            {" "}
+            {components.Models?.[language].SponsorAndDonate} !!
+          </h3>
           <div className='py-4'>
             <div className='max-w-md mx-auto mt-8'>
               <form onSubmit={handleSubmit} className='space-y-4'>
-
                 <div>
-                  <select id='typeDnate' name="typeDnate" value={formData.typeDnate} onChange={handleChange} className='w-full px-3 py-2 border rounded-md ' required>
-                    <option value="Donate" key="Donate">{components.Models?.[language].Donate}</option>
-                    <option value="Sponsor" key="Sponsor">{components.Models?.[language].Sponsor}</option>
+                  <select
+                    id='typeDnate'
+                    name='typeDnate'
+                    value={formData.typeDonate}
+                    onChange={handleChange}
+                    className='w-full px-3 py-2 border rounded-md '
+                    required
+                  >
+                    <option value='donate' key='Donate'>
+                      {components.Models?.[language].Donate}
+                    </option>
+                    <option value='sponsor' key='Sponsor'>
+                      {components.Models?.[language].Sponsor}
+                    </option>
                   </select>
                 </div>
-                
+
                 <div>
                   <label htmlFor='nom' className='block mb-1'>
-                  {components.Models?.[language].nom}
+                    {components.Models?.[language].nom}
                   </label>
                   <input
                     type='text'
@@ -90,7 +102,7 @@ const ModalDonate = ({ language, setLanguage }) => {
                 </div>
                 <div>
                   <label htmlFor='prenom' className='block mb-1'>
-                  {components.Models?.[language].prenom}
+                    {components.Models?.[language].prenom}
                   </label>
                   <input
                     type='text'
@@ -162,7 +174,7 @@ const ModalDonate = ({ language, setLanguage }) => {
                 </div>
                 <div>
                   <label htmlFor='email' className='block mb-1'>
-                  {components.Models?.[language].email}
+                    {components.Models?.[language].email}
                   </label>
                   <input
                     type='email'
@@ -187,14 +199,16 @@ const ModalDonate = ({ language, setLanguage }) => {
             <form method='dialog'>
               {/* if there is a button in form, it will close the modal */}
               <div className='flex justify-center'>
-                <button className='btn'>{components.Models?.[language].close}</button>
+                <button className='btn'>
+                  {components.Models?.[language].close}
+                </button>
               </div>
             </form>
           </div>
         </div>
       </dialog>
     </div>
-  )
-}
+  );
+};
 
-export default ModalDonate
+export default ModalDonate;
