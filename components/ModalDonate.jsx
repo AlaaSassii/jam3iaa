@@ -6,7 +6,7 @@ import { createSupport } from "../firebase/support";
 
 const ModalDonate = ({ language, setLanguage }) => {
   const [formData, setFormData] = useState({
-    typeDonate: "",
+    typeDonate: "donate",
     nom: "",
     prenom: "",
     age: "",
@@ -73,7 +73,7 @@ const ModalDonate = ({ language, setLanguage }) => {
                   <select
                     id='typeDnate'
                     name='typeDnate'
-                    value={formData.typeDonate}
+                    defaultValue='donate'
                     onChange={handleChange}
                     className='w-full px-3 py-2 border rounded-md '
                     required

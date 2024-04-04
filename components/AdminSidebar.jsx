@@ -6,7 +6,7 @@ import AdminSidebarLink from "./AdminSidebarLink";
 import React, { useState } from "react";
 import { MdEvent } from "react-icons/md";
 import { RxActivityLog } from "react-icons/rx";
-import { FaCalculator, FaUsers } from "react-icons/fa";
+import { FaCalculator, FaDonate, FaUsers } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
 
 import useSidebarStore from "../hooks/Store/useSidebarStore";
@@ -63,6 +63,11 @@ const AdminSidebar = () => {
             title='comptabilité'
             to='/admin/comptabilite'
             icon={FaCalculator}
+          />
+          <AdminSidebarLink
+            title='comptabilité'
+            to='/admin/support'
+            icon={FaDonate}
           />
         </div>
       </div>
