@@ -51,9 +51,6 @@ const ModalDonate = ({ language, setLanguage }) => {
     } catch (error) {
       console.error("Error adding document: ", error);
     }
-
-    console.log(formData);
-    console.log(language);
   };
   return (
     <div>
