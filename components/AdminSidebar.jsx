@@ -6,7 +6,7 @@ import AdminSidebarLink from "./AdminSidebarLink";
 import React, { useState } from "react";
 import { MdEvent } from "react-icons/md";
 import { RxActivityLog } from "react-icons/rx";
-import { FaUsers } from "react-icons/fa";
+import { FaCalculator, FaUsers } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
 
 import useSidebarStore from "../hooks/Store/useSidebarStore";
@@ -58,6 +58,11 @@ const AdminSidebar = () => {
             title='Accept Members'
             to='/admin/request-members'
             icon={IoPersonAddSharp}
+          />
+          <AdminSidebarLink
+            title='comptabilité'
+            to='/admin/comptabilite'
+            icon={FaCalculator}
           />
         </div>
       </div>

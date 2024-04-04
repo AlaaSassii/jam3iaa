@@ -2,7 +2,7 @@
 import AdminNavbar from "../../../components/AdminNavbar";
 import AdminSidebar from "../../../components/AdminSidebar";
 import AdminOverviewCard from "../../../components/AdminOverviewCard";
-
+import { v4 } from "uuid";
 import { FcAutomatic } from "react-icons/fc";
 import { FcBusinessContact } from "react-icons/fc";
 import { FcEditImage } from "react-icons/fc";
@@ -15,6 +15,8 @@ import { getMembers } from "../../../firebase/memeber";
 import { getEvents } from "../../../firebase/event";
 import { getActivities } from "../../../firebase/activity";
 import { useAdminPassword } from "../../../hooks/Store/useAdminPassword";
+import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
+import { storage } from "../../../firebase/firebase";
 const Dashboard = () => {
   const { events, getEvent } = useCreateEvent((state) => ({
     events: state.events,
@@ -36,6 +38,24 @@ const Dashboard = () => {
       storePassword: state.storePassword,
     })
   );
+  const handleAddingPdf = (e) => {
+    const uploadPDF = (imageUpload) => {
+      if (imageUpload == null) return;
+      const imageRef = ref(storage, `pdf/${imageUpload.name + v4()}`);
+      uploadBytes(imageRef, imageUpload)
+        .then((snapshot) => {
+          getDownloadURL(snapshot.ref).then((url) => {
+            alert("added ");
+          });
+        })
+        .catch((error) => {
+          console.error("Error uploading file: ", error);
+        });
+    };
+    if (e.target.files) {
+      uploadPDF(e.target.files[0]);
+    }
+  };
   useEffect(() => {
     if (!passwordStored) {
       const userPassword = prompt("Admin password");
@@ -68,8 +88,13 @@ const Dashboard = () => {
       <AdminNavbar title={"Overview"} />
 
       <div className='md:pl-[218px] pt-2 mx-[5px] '>
-        <ModalCharityFinance />
-
+        {/* <ModalCharityFinance /> */}
+        <input
+          type='file'
+          className='file-input file-input-bordered w-full max-w-xs'
+          onChange={handleAddingPdf}
+          value=''
+        />
         <div className='bg-rose-100    p-3 rounded '>
           <div className='flex flex-col gap-10'>
             <div className='p-3 font-bold text-lg'>Information</div>
