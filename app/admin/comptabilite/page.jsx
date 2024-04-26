@@ -4,6 +4,8 @@ import { getStorage, ref, listAll, getDownloadURL } from "firebase/storage";
 
 import { app } from "../../../firebase/firebase";
 import Link from "next/link";
+import AdminSidebar from "../../../components/AdminSidebar";
+import AdminNavbar from "../../../components/AdminNavbar";
 const page = () => {
   const [data, setData] = React.useState([]);
   useEffect(() => {
@@ -29,17 +31,21 @@ const page = () => {
       });
   }, []);
   return (
-    <div>
-      {data.map((value, index) => (
-        <Link
-          href={value?.url}
-          key={index}
-          className='text-pink-700 block decoration-inherit underline p-2'
-        >
-          {value?.name}
-        </Link>
-      ))}
-    </div>
+    <>
+      <AdminSidebar />
+      <AdminNavbar title={"comptabilite"} />
+      <div className='md:pl-[218px] pt-2'>
+        {data.map((value, index) => (
+          <Link
+            href={value?.url}
+            key={index}
+            className='text-pink-700 block decoration-inherit underline p-2'
+          >
+            {value?.name}
+          </Link>
+        ))}
+      </div>
+    </>
   );
 };
 

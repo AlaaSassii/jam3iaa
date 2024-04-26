@@ -26,17 +26,17 @@ const page = ({ params }) => {
           <div className='max-w-4xl mx-auto'>
             <img className='w-full mb-4 rounded-lg' src={data.image} alt='' />
             <h2 className='text-2xl font-bold mb-2'>{data.name}</h2>
-            <p className='text-gray-700 mb-2'>
+            <div className='text-gray-700 mb-2'>
               <span className=' font-semibold'>Description:</span>{" "}
               {data.description}
-            </p>
+            </div>
             <div className='w-full flex flex-col md:flex-row  justify-center gap-3 mt-3'>
-              <p className='text-gray-700 mb-2 p-2 bg-neutral-200 rounded-lg flex gap-3 items-center cursor-pointer '>
+              <div className='text-gray-700 mb-2 p-2 bg-neutral-200 rounded-lg flex gap-3 items-center cursor-pointer '>
                 <img src='/eventsSinglepage/date.png' className='w-10' alt='' />
                 <div className='font-bold'>Date</div>
                 <div>{data.date}</div>
-              </p>
-              <p className='text-gray-700 mb-2 p-2 bg-neutral-200 rounded-lg flex gap-3 items-center cursor-pointer'>
+              </div>
+              <div className='text-gray-700 mb-2 p-2 bg-neutral-200 rounded-lg flex gap-3 items-center cursor-pointer'>
                 <img
                   src='/eventsSinglepage/cloock.png'
                   className='w-10'
@@ -44,17 +44,16 @@ const page = ({ params }) => {
                 />
                 <div className='font-bold'>Le temps</div>
                 <div>{data.time}</div>
-              </p>
+              </div>
               <p className='text-gray-700 mb-2 p-2 bg-neutral-200 rounded-lg flex gap-3 items-center cursor-pointer'>
                 <img src='/eventsSinglepage/map.png' className='w-10' alt='' />
                 <div className='font-bold'>Adresse</div>
                 <div>{data.address}</div>
               </p>
-              <a href={data.link} target='_blank'>
-                {data.link}
-              </a>
             </div>
-
+            <a href={data.link} target='_blank'>
+              {data.link}
+            </a>
             {/* Add more fields as needed */}
           </div>
         </div>

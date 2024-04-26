@@ -98,7 +98,7 @@ export const components = {
     'Rejoignez': {
         fr: {
             paragraphe: '"Rejoignez-nous dans notre quête pour un avenir meilleur. Ensemble, nous pouvons réaliser des changements significatifs et positifs dans notre monde. Que vous souhaitiez contribuer avec vos compétences, votre temps ou vos ressources, chaque contribution est précieuse et nous rapproche un peu plus de nos objectifs communs. Ensemble, faisons une différence et bâtissons un avenir plus lumineux pour les générations à venir."',
-            rejoiinezNous: 'Rejoignez-nous',
+            rejoignezNous: 'Rejoignez-nous',
         },
         ar: {
             paragraphe: '"انضم إلينا في سعينا نحو مستقبل أفضل. معًا، يمكننا تحقيق تغييرات معنوية وإيجابية في عالمنا. سواء كنت ترغب في المساهمة بمهاراتك، وقتك أو مواردك، فإن كل مساهمة ثمينة وتقربنا قليلاً أكثر من أهدافنا المشتركة. معًا، لنصنع فارقًا ولنبني مستقبلًا أكثر إشراقًا للأجيال القادمة."',

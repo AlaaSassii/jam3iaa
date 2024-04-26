@@ -65,7 +65,7 @@ const AdminSidebar = () => {
             icon={FaCalculator}
           />
           <AdminSidebarLink
-            title='comptabilité'
+            title='donations'
             to='/admin/support'
             icon={FaDonate}
           />

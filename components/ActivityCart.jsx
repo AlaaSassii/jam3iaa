@@ -1,8 +1,12 @@
 import React from "react";
-
-const ActivityCart = ({ title, path, disc, adress }) => {
+import { useRouter } from "next/navigation";
+const ActivityCart = ({ title, path, disc, adress, link }) => {
+  const router = useRouter();
   return (
-    <div className='card w-full bg-base-100 shadow-xl cursor-pointer transition hover:-translate-y-2 hover:bg-rose-100'>
+    <div
+      className='card w-full bg-base-100 shadow-xl cursor-pointer transition hover:-translate-y-2 hover:bg-rose-100 '
+      onClick={() => router.push(link)}
+    >
       <figure>
         <img src={path} alt='Shoes' />
       </figure>

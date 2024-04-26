@@ -6,7 +6,7 @@ const EventsCart = ({ title, path, disc, adress, link }) => {
   const router = useRouter();
   return (
     <div
-      className='card w-full bg-base-100 shadow-xl cursor-pointer transition hover:-translate-y-2 hover:bg-rose-100'
+      className='card w-full bg-base-100 shadow-xl cursor-pointer transition hover:-translate-y-2 hover:bg-rose-100 z-5'
       onClick={() => router.push(link)}
     >
       <figure>

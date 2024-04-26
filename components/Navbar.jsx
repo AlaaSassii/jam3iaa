@@ -8,6 +8,7 @@ import { useLanguage } from "../hooks/useLanguage";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
+import Link from "next/link";
 
 const Navbar = ({ language, setLanguage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(true);
@@ -22,8 +23,8 @@ const Navbar = ({ language, setLanguage }) => {
     }
   }, []);
   return (
-    <div className=''>
-      <div className='bg-rose-500 px-2 lg:px-20 text-white py-2 flex justify-between text-xs lg:text-base flex-col lg:flex-row'>
+    <div className='z-50 '>
+      <div className='bg-rose-500 px-2 lg:px-20 text-white py-2 flex justify-between text-xs lg:text-base flex-col lg:flex-row '>
         <div>Email : support@aassociationarij.com </div>
         <div className='flex gap-2 items-center'>
           <div>TELL : 94 398 054 |</div>
@@ -55,29 +56,29 @@ const Navbar = ({ language, setLanguage }) => {
           }`}
         >
           <li className='cursor-pointer px-2 hover:text-black transition'>
-            <a href='http://localhost:3000/home#home'>
+            <Link href='/home#home'>
               {components.Navbar?.[language]?.Accueil}
-            </a>
+            </Link>
           </li>
           <li className='cursor-pointer px-2 hover:text-black transition'>
-            <a href='http://localhost:3000/home#about'>
+            <Link href='/home#about'>
               {components.Navbar?.[language]?.aProposNous}
-            </a>
+            </Link>
           </li>
           <li className='cursor-pointer px-2 hover:text-black transition'>
-            <a href='http://localhost:3000/home/events'>
+            <Link href='/home/events'>
               {components.Navbar?.[language].Événements}
-            </a>
+            </Link>
           </li>
           <li className='cursor-pointer px-2 hover:text-black transition'>
-            <a href='http://localhost:3000/home/activities'>
+            <Link href='/home/activities'>
               {components.Navbar?.[language].Activités}
-            </a>
+            </Link>
           </li>
           <li className='cursor-pointer px-2 hover:text-black transition'>
-            <a href='http://localhost:3000/home#contact'>
+            <Link href='/home#contact'>
               {components.Navbar?.[language].contactezNous}
-            </a>
+            </Link>
           </li>
           <div
             className=' lg:hidden bg-white text-sm  p-2 my-2 rounded-2xl font-semibold cursor-pointer hover:text-rose-500 '
@@ -94,7 +95,7 @@ const Navbar = ({ language, setLanguage }) => {
           />
         </ul>
         <select
-          className='fixed right-0 top-[50%] py-2 bg-rose-500 text-white'
+          className='fixed right-0 top-[50%] py-2 bg-rose-500 text-white z-30'
           defaultValue={language}
           onChange={(e) => {
             setLanguage(e.target.value);

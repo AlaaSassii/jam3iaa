@@ -26,6 +26,7 @@ const Events = ({ language }) => {
             path={e?.image}
             adress={e?.address}
             disc={e?.description}
+            link={`home/events/${e.id}`}
             key={i}
           />
         ))}

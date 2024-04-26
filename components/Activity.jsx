@@ -25,6 +25,8 @@ const Activity = ({ language }) => {
             path={e?.image}
             adress={e?.address}
             disc={e?.description}
+            id={e?.id}
+            link={`home/activities/${e.id}`}
             key={i}
           />
         ))}

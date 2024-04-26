@@ -7,9 +7,7 @@ import { getPersonData } from "../../../firebase/person";
 import TablePerson from "../../../components/TablePerson";
 import { useAdminPassword } from "../../../hooks/Store/useAdminPassword";
 
-
 const page = () => {
-
   const { password, passwordStored, storePassword } = useAdminPassword(
     (state) => ({
       password: state.password,
@@ -27,15 +25,11 @@ const page = () => {
     }
   }, []);
 
-
-
-
-
   return (
     <div className=''>
-      <AdminSidebar/>
-      <AdminNavbar title={"Members"} />
-      
+      <AdminSidebar />
+      <AdminNavbar title={"Accept Members"} />
+
       <div className='md:pl-[218px] pt-2'>
         <TablePerson />
       </div>
