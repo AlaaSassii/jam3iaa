@@ -9,7 +9,6 @@ import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 
-
 const Navbar = ({ language, setLanguage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(true);
 
@@ -24,21 +23,21 @@ const Navbar = ({ language, setLanguage }) => {
   }, []);
   return (
     <div className=''>
-      <div className="bg-rose-500 px-2 lg:px-20 text-white py-2 flex justify-between text-xs lg:text-base flex-col lg:flex-row">
-        <div >Email : support@aassociationarij.com </div>
-        <div className="flex gap-2 items-center">
-            <div >TELL : 94 398 054   |</div> 
-            <div className='flex space-x-4'>
-                  <a href='#' className='text-white'>
-                    <FaFacebook  size={20} />
-                  </a>
-                  <a href='#' className='text-white'>
-                    <AiFillInstagram size={20} />
-                  </a>
-                  <a href='#' className='text-white'>
-                    <FaTwitter size={20} />
-                  </a>
-                </div>
+      <div className='bg-rose-500 px-2 lg:px-20 text-white py-2 flex justify-between text-xs lg:text-base flex-col lg:flex-row'>
+        <div>Email : support@aassociationarij.com </div>
+        <div className='flex gap-2 items-center'>
+          <div>TELL : 94 398 054 |</div>
+          <div className='flex space-x-4'>
+            <a href='#' className='text-white'>
+              <FaFacebook size={20} />
+            </a>
+            <a href='#' className='text-white'>
+              <AiFillInstagram size={20} />
+            </a>
+            <a href='#' className='text-white'>
+              <FaTwitter size={20} />
+            </a>
+          </div>
         </div>
       </div>
       <div className='flex justify-between lg:justify-around  items-center bg-gray-800 z-100000'>

@@ -4,6 +4,7 @@ import { getEvents } from "../../../../firebase/event";
 import Navbar from "../../../../components/Navbar";
 import Footer from "../../../../components/Footer";
 import { useLanguage } from "../../../../hooks/useLanguage";
+import Link from "next/link";
 
 const Page = ({ params }) => {
   const { language, setLanguage } = useLanguage();
@@ -50,7 +51,14 @@ const Page = ({ params }) => {
                 <div>{data.address}</div>
               </p>
             </div>
-
+            <h1 className='inline'>Link: </h1>
+            <Link
+              href={data?.link || ""}
+              target='_blank'
+              className='text-red-500'
+            >
+              {data.link}
+            </Link>
             {/* Add more fields as needed */}
           </div>
         </div>

@@ -83,6 +83,7 @@ const Page = () => {
                 handleEditInput={handleEditInput}
                 deleteFunction={deleteActivityFunction} // Updated function name
                 openModal={openModal}
+                link={activity.link}
                 key={activity.id} // Updated variable name
               />
             )

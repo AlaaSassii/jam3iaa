@@ -50,6 +50,9 @@ const page = ({ params }) => {
                 <div className='font-bold'>Adresse</div>
                 <div>{data.address}</div>
               </p>
+              <a href={data.link} target='_blank'>
+                {data.link}
+              </a>
             </div>
 
             {/* Add more fields as needed */}

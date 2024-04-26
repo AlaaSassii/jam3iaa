@@ -14,9 +14,10 @@ const InfoCard = ({
   changeId,
   address,
   time,
+  link,
 }) => {
   const handleEditClick = () => {
-    handleEditInput({ image, name, description, date, address, time });
+    handleEditInput({ image, name, description, date, address, time, link });
     document.getElementById("my_modal_3").showModal();
     changeStatus("edit");
     changeId(id);
@@ -33,6 +34,9 @@ const InfoCard = ({
         <p>{address}</p>
         <p>{date}</p>
         <p>{time}</p>
+        <a href={link} target='_blank'>
+          {link}
+        </a>
         <div className='card-actions justify-end'>
           <button className='btn btn-primary' onClick={handleEditClick}>
             Edit

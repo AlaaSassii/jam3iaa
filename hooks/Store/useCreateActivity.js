@@ -17,7 +17,8 @@ export const useCreateActivity = create(set => ({
         image: '',
         date: '',
         address: '', // New field
-        time: ''     // New field
+        time: '',
+        link: ''   // New field
     },
     getInputs: (key, value) => {
         set(state => ({
@@ -35,7 +36,7 @@ export const useCreateActivity = create(set => ({
             image: '',
             date: '',
             address: '', // New field
-            time: ''     // New field
+            time: '', link: ''     // New field
         }
     }),
     status: 'create',

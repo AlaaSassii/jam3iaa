@@ -82,6 +82,7 @@ const page = () => {
               handleEditInput={handleEditInput}
               deleteFunction={deleteEventFunction}
               openModal={openModal}
+              link={event.link}
               key={event.id}
             />
           ))}

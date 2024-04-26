@@ -17,6 +17,7 @@ const ModalCreateActivity = () => {
     updateActivity,
     changeStatus,
     activities,
+    link,
   } = useCreateActivity((state) => ({
     addActivity: state.addActivity,
     modalOpen: state.modalOpen,
@@ -30,6 +31,7 @@ const ModalCreateActivity = () => {
     updateActivity: state.updateActivity,
     changeStatus: state.changeStatus,
     activities: state.activities,
+    link: state.link,
   }));
   const [loading, setLoading] = useState(false);
 
@@ -66,7 +68,8 @@ const ModalCreateActivity = () => {
           inputs.image,
           inputs.date,
           inputs.address,
-          inputs.time
+          inputs.time,
+          inputs.link
         )
           .then((id) => {
             addActivity(inputs, id);
@@ -85,7 +88,8 @@ const ModalCreateActivity = () => {
           inputs.image,
           inputs.date,
           inputs.address,
-          inputs.time
+          inputs.time,
+          inputs.link
         );
       }
     } else {
@@ -97,7 +101,8 @@ const ModalCreateActivity = () => {
         inputs.image,
         inputs.date,
         inputs.address,
-        inputs.time
+        inputs.time,
+        inputs.link
       )
         .then((res) => {
           updateActivity({ ...inputs }, id);
@@ -181,6 +186,14 @@ const ModalCreateActivity = () => {
               className='input input-bordered w-[150%] max-w-xs'
               onChange={(e) => getInputs("time", e.target.value)}
               value={inputs.time}
+            />
+            <label htmlFor=''>Link</label>
+            <input
+              type='text'
+              placeholder='Link'
+              className='input input-bordered w-[150%] max-w-xs'
+              onChange={(e) => getInputs("link", e.target.value)}
+              value={inputs.link}
             />
             <button
               className='btn btn-outline btn-accent w-fit flex '

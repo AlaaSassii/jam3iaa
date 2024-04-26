@@ -24,6 +24,7 @@ const ModalCreateEvent = () => {
     updateEvent,
     changeStatus,
     events,
+    link,
   } = useCreateEvent((state) => ({
     addEvents: state.addEvents,
     modalOpen: state.modalOpen,
@@ -37,6 +38,7 @@ const ModalCreateEvent = () => {
     updateEvent: state.updateEvent,
     changeStatus: state.changeStatus,
     events: state.events,
+    link: state.link,
   }));
 
   const [loading, setLoading] = useState(false);
@@ -71,7 +73,8 @@ const ModalCreateEvent = () => {
           inputs.image,
           inputs.date,
           inputs.address,
-          inputs.time
+          inputs.time,
+          inputs.link
         )
           .then((id) => {
             addEvents(inputs, id);
@@ -94,7 +97,8 @@ const ModalCreateEvent = () => {
         inputs.image,
         inputs.date,
         inputs.address,
-        inputs.time
+        inputs.time,
+        inputs.link
       )
         .then((res) => {
           updateEvent({ ...inputs }, id);
@@ -180,6 +184,14 @@ const ModalCreateEvent = () => {
               className='input input-bordered w-[150%] max-w-xs'
               onChange={(e) => getInputs("time", e.target.value)}
               value={inputs.time}
+            />
+            <label htmlFor=''>Link</label>
+            <input
+              type='text'
+              placeholder='Link'
+              className='input input-bordered w-[150%] max-w-xs'
+              onChange={(e) => getInputs("link", e.target.value)}
+              value={inputs.link}
             />
             <button
               className='btn btn-outline btn-accent w-fit flex '
