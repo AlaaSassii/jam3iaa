@@ -10,6 +10,8 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 
+import ModalDonate from "./ModalDonate";
+
 const Navbar = ({ language, setLanguage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(true);
 
@@ -23,23 +25,29 @@ const Navbar = ({ language, setLanguage }) => {
     }
   }, []);
   return (
-    <div className='z-50 '>
-      <div className='bg-rose-500 px-2 lg:px-20 text-white py-2 flex justify-between text-xs lg:text-base flex-col lg:flex-row '>
-        <div>Email : support@aassociationarij.com </div>
-        <div className='flex gap-2 items-center'>
-          <div>TELL : 94 398 054 |</div>
+    <>
+      <ModalDonate language={language} />
+      <div className='z-50 '>
+      <div className='bg-rose-500 px-2 lg:px-20 text-white py-2 flex justify-between items-center text-xs lg:text-base flex-col lg:flex-row gap-2 '>
+        <div className="text-xs">Email : associationarij.contact@gmail.com </div>
+
+        <div className="text-xs">Adresse : Avenue association arij 4060 kalaa kebirasousse </div>
+
+        <div className="text-xs">RIB : 17503000000265043581 </div>
+
+        <div className='flex gap-2 items-center text-xs'>
+          <div>TELL : 54 253 094 |</div>
           <div className='flex space-x-4'>
-            <a href='#' className='text-white'>
+            <a href='https://www.facebook.com/associationarij' target="_blank" className='text-white'>
               <FaFacebook size={20} />
             </a>
             <a href='#' className='text-white'>
               <AiFillInstagram size={20} />
             </a>
-            <a href='#' className='text-white'>
-              <FaTwitter size={20} />
-            </a>
+            
           </div>
         </div>
+
       </div>
       <div className='flex justify-between lg:justify-around  items-center bg-gray-800 z-100000'>
         <img
@@ -120,6 +128,8 @@ const Navbar = ({ language, setLanguage }) => {
         />
       </div>
     </div>
+    </>
+    
   );
 };
 
