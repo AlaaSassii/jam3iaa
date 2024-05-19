@@ -55,7 +55,7 @@ const About = ({ language }) => {
               
               <ul className={`text-xs md:text-sm ml-5 gap-2   ${
               language == "ar" ? "" : "circle-list gap-4"
-            }`} >
+              }`} >
                 <li>{components.About?.[language].message1}</li>
                 <li>{components.About?.[language].message2}</li>
                 <li>{components.About?.[language].message3}</li>
@@ -77,7 +77,7 @@ const About = ({ language }) => {
                 
               </ul>
 
-              
+              {/*ssssssss */}
             </div>
 
             <div className='flex flex-col gap-4 '>
