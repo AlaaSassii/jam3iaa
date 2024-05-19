@@ -115,27 +115,20 @@ const ModalCreateActivity = () => {
     }
   };
 
-
-
-  const [selectedImage,setSelectedImage] = useState("");
-  const [selectedFile,setSelectedFile] = useState(undefined);
+  const [selectedImage, setSelectedImage] = useState("");
+  const [selectedFile, setSelectedFile] = useState(undefined);
 
   const handleUpload = async () => {
-    
-    try{
-      if(!selectedFile) return ;
+    try {
+      if (!selectedFile) return;
       const formData = new FormData();
-      formData.append("file",selectedFile);
-      const {data} = await axios.post("api/image",formData);
+      formData.append("file", selectedFile);
+      const { data } = await axios.post("api/image", formData);
       console.log(data);
-      
-      
-
-    }catch(error){
+    } catch (error) {
       console.log("qsdqd");
     }
-    
-  }
+  };
   return (
     <div className='z-0'>
       <button
@@ -179,10 +172,10 @@ const ModalCreateActivity = () => {
             ></textarea>
             <label htmlFor=''>Add Image</label>
             <input
-              type='file'
+              type='text'
               className='file-input file-input-bordered w-full max-w-xs'
-              onChange={handleFileChange}
-              value=''
+              onChange={(e) => getInputs("image", e.target.value)}
+              value={inputs.image}
               disabled={loading}
             />
 
@@ -192,8 +185,8 @@ const ModalCreateActivity = () => {
               onClick={handleUpload}
               type='file'
               className='file-input file-input-bordered w-full max-w-xs'
-              onChange ={({target}) => {
-                if(target.files){
+              onChange={({ target }) => {
+                if (target.files) {
                   const file = target.files[0];
                   setSelectedImage(URL.createObjectURL(file));
                   setSelectedFile(file);
@@ -208,7 +201,7 @@ const ModalCreateActivity = () => {
                 className='w-full'
                 alt='selected image'
               />
-            ):(
+            ) : (
               <span>hiii</span>
             )}
 

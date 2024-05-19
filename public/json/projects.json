@@ -177,10 +177,10 @@
           "fr": "Projet \"Mawadda\" pour aider les futurs mariés",
           "ar": "مشروع \"مودّة\" لمساعدة المقبلين على الزواج"
         },
-        "description": {
+        "description":[ {
           "fr": "Tout au long de l'année, l'association Areej aide certains futurs mariés en leur fournissant une aide financière et matérielle (literie, vêtements, meubles), contribuant ainsi à alléger les charges et les coûts du mariage.",
           "ar": "تساعد جمعيّة أريج على مدار السنة بعض المقبلين على الزواج وذلك من خلال تقديم المساعدات المالية والعينية (مفروشات و ملابس و أثاث) إسهاما منها في تخفيف أعباء وتكاليف الزواج"
-        },
+        }],
         "activities": [],
         "starDate": {
           "ar": "",
@@ -190,15 +190,15 @@
       {
        
         "id": 5,
-        "image":"/projectsImages/ دعم المشاريع الصغرى.jpg",
+        "image":"/projectsImages/دعم المشاريع الصغرى.jpg",
         "title": {
           "fr": "Projet \"Daam\" pour les microprojets",
           "ar": "مشروع \"دعم\" للمشاريع الصغرى"
         },
-        "description": {
+        "description": [{
           "fr": "L'association Areej contribue à certains projets de développement au profit des veuves et des familles pauvres afin de préserver la dignité de ces familles et de les rendre capables de subvenir à leurs besoins à l'avenir. Dans cette optique, l'association Areej travaille à transformer les familles pauvres et nécessiteuses en familles productives, capables de générer un revenu stable qui leur assure un meilleur niveau de vie et leur permet de satisfaire leurs besoins sans avoir besoin d'aide. Parmi les microprojets les plus importants auxquels l'association a contribué : un projet de couture, un projet de vente de produits de nettoyage, un projet de salon de coiffure, un projet de kiosque...",
           "ar": "تساهم جمعيّة أريج في بعض المشاريع التنموية لفائدة الأرامل و الأسر الفقيرة وذلك بهدف حفظ كرامة هذه الأسر و تمكينها من الاعتماد على نفسها في المستقبل من هذا المنطلق تعمل جمعيّة أريج على تحويل الأسر الفقيرة المحتاجة إلى أسر منتجة قادرة على توفير دخل ثابت يضمن لها مستوى معيشيا أفضل، ويجعلها قادرة على تحقيق متطلباتها دون الحاجة إلى مساعدة. من أهمّ المشاريع الصغرى التي ساهمت بها الجمعيّة : مشروع خياطة, مشروع لبيع مواد ّ تنظيف , مشروع حلاق, مشروع كشك ..."
-        },
+        }],
         "activities": [],
         "starDate": {
           "ar": "",
@@ -212,10 +212,10 @@
           "fr": "Projet d'amélioration du logement",
           "ar": "مشروع تحسين مسكن"
         },
-        "description": {
+        "description": [{
           "fr": "Ce projet vise à améliorer les conditions de logement des familles défavorisées en leur fournissant une aide pour rénover ou reconstruire leurs logements.",
           "ar": "للمجال التّعليمي التربوي في جمعيّة أريج مرموقة تجلّت من خلال إبلائه أهميّة من حيث الأنشطة المنجزة فيه ونذكر في الصدّد بعض الأنشطة."
-        },
+        }],
         "activities": [
           {
             "fr": {

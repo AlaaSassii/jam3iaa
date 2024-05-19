@@ -155,10 +155,10 @@ const ModalCreateEvent = () => {
             <label htmlFor=''>Add Image</label>
 
             <input
-              type='file'
+              type='text'
               className='file-input file-input-bordered w-full max-w-xs'
-              onChange={(e) => uploadFile(e.target.files[0])}
-              value=''
+              onChange={(e) => getInputs("image", e.target.value)}
+              value={inputs.image}
               disabled={loading}
             />
             <label htmlFor=''>Date</label>
