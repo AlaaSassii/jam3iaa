@@ -78,7 +78,7 @@ export const components = {
             message17: 'Distribution de fauteuils roulants',
             message18: 'Distribution et prise en charge de médicaments',
             foundedTitle: 'Fondée',
-            donateTitle: 'Faire un don'
+            donateTitle: 'membre de l\'association' 
         },
         
         ar: {
@@ -106,7 +106,7 @@ export const components = {
             message17: 'توزيع الكراسي المتحركة',
             message18: 'توزيع وتغطية تكاليف الأدوية',
             foundedTitle: 'تأسست',
-            donateTitle: 'تبرع'
+            donateTitle: 'عضو في الجمعية'
         }
 
     },

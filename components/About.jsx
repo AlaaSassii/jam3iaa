@@ -43,7 +43,7 @@ const About = ({ language }) => {
           </div>
         </div>
 
-        <div className="p-5">
+        <div className="p-2 md:p-5 mt-3">
           <div className='flex flex-col md:flex-row   gap-5 items-center justify-around'>
 
             <div className='flex flex-col gap-2 '>
@@ -78,12 +78,12 @@ const About = ({ language }) => {
 
             <div className='flex flex-col gap-4 '>
               <div className='flex flex-col'>
-                <div className='font-bold text-4xl text-rose-500'>2020</div>
+                <div className='font-bold text-4xl text-rose-500'>2018</div>
                 <div>{components.About?.[language].foundedTitle}</div>
               </div>
               <div className='flex flex-col'>
                 <div className='font-bold text-4xl text-rose-500'>1089B</div>
-                <div>{components.About?.[language].doanteTitle}</div>
+                <div>{components.About?.[language].donateTitle}</div>
               </div>
             </div>
 
