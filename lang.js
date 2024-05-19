@@ -6,7 +6,8 @@ export const components = {
             Événements: 'الفعاليات',
             Activités: 'الأنشطة',
             Donate: 'اتكفل و اتبرع',
-            contactezNous: 'اتصل بنا'
+            contactezNous: 'اتصل بنا',
+            projects: 'المشاريع'
         },
         fr: {
             Accueil: 'Accueil',
@@ -14,7 +15,8 @@ export const components = {
             Événements: 'Événements',
             Activités: 'Activités',
             Donate: 'Sponsor and donate',
-            contactezNous: 'Contactez nous'
+            contactezNous: 'Contactez nous',
+            projects: 'projects'
         }
     },
 
@@ -82,10 +84,10 @@ export const components = {
         },
         
         ar: {
-            bigTitle: 'قصتنا',
+            bigTitle: 'من نحن؟',
             title: 'جمعية أريج',
-            secondTitle: 'نحن منظمة غير ربحية',
-            paragraphe: 'أريج جمعيّة خيريّة ناشطة في مجالات التعليم , الصحّة و الشؤون الاجتماعيّة رسمت لنفسها هدف مساعدة المحتاجين لمنحهم حياة و مستقبلا أفضل',
+            secondTitle: "أريج هي جمعية خيرية نشطة في مجالات التعليم والصحة والشؤون الاجتماعية. تهدف إلى مساعدة المحتاجين لتقديم حياة ومستقبل أفضل لهم.",
+            paragraphe: "أريج هي جمعية خيرية أُنشئت في مارس 2018 وتعمل في المجال الاجتماعي والصحي والتعليمي. تستهدف بشكل رئيسي الأيتام والأطفال الأكثر احتياجًا الذين يواجهون الفقر والمرض، وكذلك جميع المحتاجين الذين يمكنها تحسين حياتهم اليومية أو حتى تغييرها.",
             title2: 'مهامنا',
             message1: "الدعم الاجتماعي والمالي من خلال التبرعات أو كفالة الأيتام",
             message2: "رحلات ترفيهية ونزهات وأنشطة ترفيهية لأعضاء الجمعية والأيتام المكفولين",
