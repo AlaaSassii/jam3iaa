@@ -115,6 +115,27 @@ const ModalCreateActivity = () => {
     }
   };
 
+
+
+  const [selectedImage,setSelectedImage] = useState("");
+  const [selectedFile,setSelectedFile] = useState(undefined);
+
+  const handleUpload = async () => {
+    
+    try{
+      if(!selectedFile) return ;
+      const formData = new FormData();
+      formData.append("file",selectedFile);
+      const {data} = await axios.post("api/image",formData);
+      console.log(data);
+      
+      
+
+    }catch(error){
+      console.log("qsdqd");
+    }
+    
+  }
   return (
     <div className='z-0'>
       <button
@@ -148,6 +169,7 @@ const ModalCreateActivity = () => {
               onChange={(e) => getInputs("name", e.target.value)}
               value={inputs.name}
             />
+
             <label htmlFor=''>Activity Description</label>
             <textarea
               className='textarea textarea-bordered w-full'
@@ -163,6 +185,35 @@ const ModalCreateActivity = () => {
               value=''
               disabled={loading}
             />
+
+            {/*--------------------------*/}
+
+            <input
+              onClick={handleUpload}
+              type='file'
+              className='file-input file-input-bordered w-full max-w-xs'
+              onChange ={({target}) => {
+                if(target.files){
+                  const file = target.files[0];
+                  setSelectedImage(URL.createObjectURL(file));
+                  setSelectedFile(file);
+                }
+              }}
+              value=''
+              disabled={loading}
+            />
+            {selectedImage ? (
+              <img
+                src={selectedImage}
+                className='w-full'
+                alt='selected image'
+              />
+            ):(
+              <span>hiii</span>
+            )}
+
+            {/*--------------------------*/}
+
             <label htmlFor=''>Date</label>
             <input
               type='date'
