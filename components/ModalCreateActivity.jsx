@@ -181,30 +181,6 @@ const ModalCreateActivity = () => {
 
             {/*--------------------------*/}
 
-            <input
-              onClick={handleUpload}
-              type='file'
-              className='file-input file-input-bordered w-full max-w-xs'
-              onChange={({ target }) => {
-                if (target.files) {
-                  const file = target.files[0];
-                  setSelectedImage(URL.createObjectURL(file));
-                  setSelectedFile(file);
-                }
-              }}
-              value=''
-              disabled={loading}
-            />
-            {selectedImage ? (
-              <img
-                src={selectedImage}
-                className='w-full'
-                alt='selected image'
-              />
-            ) : (
-              <span>hiii</span>
-            )}
-
             {/*--------------------------*/}
 
             <label htmlFor=''>Date</label>

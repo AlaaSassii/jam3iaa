@@ -35,15 +35,10 @@ const page = () => {
       <AdminSidebar />
       <AdminNavbar title={"comptabilite"} />
       <div className='md:pl-[218px] pt-2'>
-        {data.map((value, index) => (
-          <Link
-            href={value?.url}
-            key={index}
-            className='text-pink-700 block decoration-inherit underline p-2'
-          >
-            {value?.name}
-          </Link>
-        ))}
+        <Link
+          href={""}
+          className='text-pink-700 block decoration-inherit underline p-2'
+        ></Link>
       </div>
     </>
   );
