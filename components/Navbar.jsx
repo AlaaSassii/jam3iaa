@@ -11,6 +11,7 @@ import { FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 
 import ModalDonate from "./ModalDonate";
+import axios from "axios";
 
 const Navbar = ({ language, setLanguage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(true);
@@ -24,6 +25,15 @@ const Navbar = ({ language, setLanguage }) => {
       setIsMenuOpen(false);
     }
   }, []);
+
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    axios("/json/projects.json").then((res) => setData(res.data.projects));
+  }, []);
+
+  
+
   return (
     <>
       <ModalDonate language={language} />
@@ -88,6 +98,23 @@ const Navbar = ({ language, setLanguage }) => {
               {components.Navbar?.[language].contactezNous}
             </Link>
           </li>
+
+          <li className='cursor-pointer px-2 hover:text-black  transition relative projects'>
+            <Link href='/home/events'>
+              {components.Navbar?.[language].projects}
+            </Link>
+            <ul className="absolute bg-white p-2 rounded projects_liste ">
+              
+              
+            {data?.map(p => (
+              <Link href={`/home/projects/${p.id}`}>
+                <li className="hover:text-rose-500 hover:bg-rose-100 transition rounded p-2 text-end w-40 text-xs">{p.title?.[language]}</li>
+              </Link>
+            ))}
+              
+            </ul>
+          </li>
+
           <div
             className=' lg:hidden bg-white text-sm  p-2 my-2 rounded-2xl font-semibold cursor-pointer hover:text-rose-500 '
             onClick={() => {
