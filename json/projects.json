@@ -3,251 +3,352 @@
       {
         "id": 1,
         "title": {
-          "fr": "Projet \"Miséricorde\" pour la parrainage des orphelins",
-          "ar": "مشروع &quot;رحمة&quot; لكفالة الأيتام"
+          "fr": "Projet \"Rahma\" pour le parrainage des orphelins",
+          "ar": "مشروع \"رحمة\" لكفالة الأيتام"
         },
-        "description": {
-          "fr": "Depuis sa création, l'Association ARIJ prend en charge un certain nombre d'orphelins...",
-          "ar": "تتكفل جمعيّة أريج منذ تأسيسها بعدد من الأيتام حيث بلغ عدد الأيتام في الكفالة 404 يتيم إلى غاية أفريل 2024..."
-        },
-        "activities": [
+        "image":"/projectsImages/كفالة أيتام.jpg",
+        "description": [
           {
-            "name": "Parrainage d'orphelins",
-            "description": "Inclut les aspects psychologiques, éducatifs, santé et récréatifs. Formation des mamans à travers des séances de sensibilisation."
+            "fr": "Depuis sa création, l'association Areej prend en charge un certain nombre d'orphelins. En avril 2024, le nombre d'orphelins parrainés a atteint 404.",
+            "ar": "تتكفل جمعيّة أريج منذ تأسيسها بعدد من الأيتام حيث بلغ عدد الأيتام في الكفالة 404 يتيم إلى غاية أفريل 2024"
+          },
+          {
+            "fr": "Cette activité est la principale de l'association Areej. L'association reçoit les dossiers des orphelins, effectue des inspections et des recherches sociales, puis le comité des affaires sociales décide de l'acceptation des dossiers des familles démunies. L'association prend en charge ces familles en leur accordant des allocations mensuelles dont le montant varie selon la situation sociale de la famille.",
+            "ar": "يعتبر هذا النّشاط الأساسي بجمعيّة أريج حيث تستقبل الجمعيّة ملفّات الأيتام ثمّ تقوم بالمعاينة و البحث الاجتماعيّ و على هذا الأساس تقرّر لجنة الشؤون الاجتماعيّة قبول ملفّات العائلات المعوزة.حيث تتكفّل الجمعيّة  بهذه العائلات بإسنادهم جرايات شهريّة يختلف مقدارها حسب الحالة الاجتماعيّة للعائلة."
+          },
+          {
+            "fr": "Le parrainage des orphelins ne se limite pas à l'aspect matériel, mais comprend également les aspects psychologique, éducatif, sanitaire et récréatif. De plus, l'association n'a pas négligé le soutien aux mères à travers des ateliers de parentalité intelligente.",
+            "ar": "و لا يقتصر نشاط كفالة الأيتام على الجانب المادّي بل شمل كذلك الجانب الّنفسي, التّربوي, الصحّي و التّرفيهي. هذا و لم تغفل الجمعيّة على تأطير الأمّهات من خلال ورشات التّربية الذّكيّة."
           }
-        ]
+        ],
+        "starDate": {
+          "ar": "",
+          "fr": "Avril 2018"
+        },
+        "activities": []
       },
       {
         "id": 2,
         "title": {
-          "fr": "Projet \"Caring\" pour le parrainage des veuves",
-          "ar": "مشروع &quot;رعاية&quot; لكفالة المسنين"
+          "fr": "Projet \"Ri'aya\" pour le parrainage des personnes âgées",
+          "ar": "مشروع \"رعاية\" لكفالة المسنين"
         },
-        "description": {
-          "fr": "Depuis sa création, l'Association ARIJ prend en charge un certain nombre de veuves...",
-          "ar": "تتكفل جمعيّة أريج منذ تأسيسها بعدد من الأرامل حيث بلغ عدد الأرامل في الكفالة 142 أرملة إلى غاية أفريل 2024..."
+        "image":"/projectsImages/رعاية مسنين.jpg",
+        "starDate": {
+          "ar": "",
+          "fr": "Avril 2018"
         },
-        "activities": [
+        "description": [
           {
-            "name": "Parrainage de veufs et de veuves",
-            "description": "Inclut l'aspect santé, comme la fourniture de médicaments, de couches et le suivi médical."
+            "fr": "Depuis sa création, l'association Areej prend en charge un certain nombre de veuves. En avril 2024, le nombre de veuves parrainées a atteint 142. L'association soutient les personnes âgées veuves en leur accordant des allocations mensuelles dont le montant varie selon la situation sociale et sanitaire de la veuve.",
+            "ar": "تتكفل جمعيّة أريج منذ تأسيسها بعدد من الأرامل حيث بلغ عدد الأرامل في الكفالة 142 أرملة إلى غاية أفريل 2024. حيث تتكفّل الجمعيّة  بالمسنين الأرامل بإسنادهم جرايات شهريّة يختلف مقدارها حسب الحالة الاجتماعيّة و الصحيّة للأرملة."
+          },
+          {
+            "fr": "Le parrainage des veuves ne se limite pas à l'aspect matériel, mais comprend également l'aspect sanitaire, tel que la fourniture de médicaments, de couches, et le suivi médical...",
+            "ar": "و لا يقتصر نشاط كفالة الأرامل على الجانب المادّي بل يشمل كذلك الجانب الصحيّ كتوفير الأدوية, الحفاظات, المتابعة الطبيّة..."
           }
-        ]
+        ],
+        "activities": []
       },
       {
         "id": 3,
+        "image":"/projectsImages/ختان جماعي.jpg",
         "title": {
-          "fr": "Projet \"Bienfaisance\" pour les aides sociales",
-          "ar": "مشروع &quot;إحسان&quot; للمساعدات الاجتماعيّة"
+          "fr": "Projet \"Ihsan\" pour l'aide sociale",
+          "ar": "مشروع \"إحسان\" للمساعدات الاجتماعيّة"
         },
-        "description": {
-          "fr": "Les aides sociales sont diverses et multiples dont les plus importantes sont...",
-          "ar": "في يخصّ المساعدات الاجتماعيّة فقد أبت الجمعيّة على تأثيثه بأنشطة متنوّعة و متعدّدة..."
-        },
-        "activities": [
+        "description": [
           {
-            "name": "Panier de Ramadhan",
-            "description": "Aide aux familles nécessiteuses pendant le mois sacré."
-          },
-          {
-            "name": "Briser le jeûne",
-            "description": "Distribution de repas aux jeûneurs pendant le Ramadan."
+            "fr": "En ce qui concerne les aides sociales, l'association a enrichi ce projet par des activités diverses et variées, les plus importantes étant",
+            "ar": "في يخصّ المساعدات الاجتماعيّة فقد أبت الجمعيّة على تأثيثه بأنشطة متنوّعة و متعدّدة أهمّها"
           }
-        ]
-      },
-      {
-        "id": 3,
-        "title": {
-          "fr": "Projet \"Bienveillance\" pour l'aide sociale",
-          "ar": "مشروع &quot;إحسان&quot; للمساعدات الاجتماعيّة"
-        },
-        "description": {
-          "fr": "En ce qui concerne l'aide sociale, l'association a meublé ses activités avec diverses activités, les plus importantes étant:",
-          "ar": "في يخصّ المساعدات الاجتماعيّة فقد أبت الجمعيّة على تأثيثه بأنشطة متنوّعة و متعدّدة أهمّها:"
-        },
+        ],
         "activities": [
           {
-            "name": {
-              "fr": "Fourniture de paniers Ramadan",
-              "ar": "قفّة رمضان"
+            "ar": {
+              "name": "قفّة رمضان",
+              "description": "يهدف نشاط قفّة رمضان إلى مساعدة العائلات المعوزة و الرّاعية للأيتام على تجاوز الصّعوبات الماديّة خلال الشّهر الكريم و قد كانت قيمة محتوى هذه القفة خلال شهر رمضان 2024 60د.وبلغ عدد العائلات المستفيدة 625 عائلة خلال رمضان 2024."
             },
-            "description": {
-              "fr": "L'objectif de l'activité des paniers Ramadan est d'aider les familles nécessiteuses et les familles d'accueil des orphelins à surmonter les difficultés financières pendant le mois sacré. La valeur du contenu de ce panier pendant le mois de Ramadan 2024 était de 60 dinars.",
-              "ar": "يهدف نشاط قفّة رمضان إلى مساعدة العائلات المعوزة و الرّاعية للأيتام على تجاوز الصّعوبات الماديّة خلال الشّهر الكريم و قد كانت قيمة محتوى هذه القفة خلال شهر رمضان 2024 60د."
+            "fr": {
+              "name": "Panier de Ramadan",
+              "description": "L'activité du panier de Ramadan vise à aider les familles démunies et celles qui prennent soin des orphelins à surmonter les difficultés financières pendant le mois sacré. La valeur de ce panier en Ramadan 2024 était de 60 DT. Le nombre de familles bénéficiaires a atteint 625 pendant Ramadan 2024."
             }
           },
           {
-            "name": {
-              "fr": "Iftar collectif",
-              "ar": "إفطار صائم"
+            "ar": {
+              "name": "إفطار صائم",
+              "description": "إضافة إلى هذا العمل فإن الجمعيّة ساهمت في إفطار2425 صائم  تقريبا  في رمضان 2024 وزعت في شكل وجبات أمام المساجد ."
             },
-            "description": {
-              "fr": "En plus de cette activité, l'association a contribué à l'iftar de près de 2425 personnes pendant le Ramadan 2024, distribuant des repas devant les mosquées.",
-              "ar": "إضافة إلى هذا العمل فإن الجمعيّة ساهمت في إفطار2425 صائم تقريبا في رمضان 2024 وزعت في شكل وجبات أمام المساجد ."
+            "fr": {
+              "name": "Iftar pour les jeûneurs",
+              "description": "En plus de cette activité, l'association a contribué à fournir des repas pour l'Iftar à environ 2425 jeûneurs pendant Ramadan 2024, distribués sous forme de repas devant les mosquées."
+            }
+          },
+          {
+            "ar": {
+              "name": "الختان الجماعي",
+              "description": "قامت جمعيّة أريج بختان 8 أطفال خلال شهر رمضان 2024 وذلك تحت إشراف الدكتور المختص أنيس يوسف بمصحة الزياتين."
+            },
+            "fr": {
+              "name": "Circoncision collective",
+              "description": "L'association Areej a organisé la circoncision de 8 enfants pendant le mois de Ramadan 2024 sous la supervision du Dr. Anis Youssef à la clinique Al-Zaytoun."
+            }
+          },
+          {
+            "ar": {
+              "name": "كسوة العيد",
+              "description": "باعتبار أنّ هذا الموسم الكريم هوّ أكثر المواسم نشاطا للجمعيّة باعتبار هدفها الخيريّ، تختتمه الجمعيّة بتوزيع ملابس العيد على الأيتام وبعض أبناء العائلات المعوزة. وذلك أيّام عيد الفطر حيث بلغ عدد الأطفال المستفيدين سنة 2024 100 طفلا. كما تم توزيع 27 وصل شراء بقيمة 100د لشراء ملابس العيد لفائدة الأيتام."
+            },
+            "fr": {
+              "name": "Vêtements de l'Aïd",
+              "description": "Étant donné que cette période sacrée est la plus active pour l'association en raison de son objectif caritatif, l'association la clôture en distribuant des vêtements de l'Aïd aux orphelins et à certains enfants de familles démunies. Pendant l'Aïd al-Fitr 2024, 100 enfants ont bénéficié de cette aide. De plus, 27 bons d'achat d'une valeur de 100 DT ont été distribués pour l'achat de vêtements de l'Aïd au profit des orphelins."
+            }
+          },
+          {
+            "ar": {
+              "name": "عيد الإضحى",
+              "description": "توزع جمعيّة أريج سنويا لحوم الاضاحي على مستحقيها من الأيتام والعائلات المعوزة."
+            },
+            "fr": {
+              "name": "Aïd al-Adha",
+              "description": "L'association Areej distribue annuellement les viandes des sacrifices de l'Aïd al-Adha aux orphelins et aux familles démunies."
+            }
+          },
+          {
+            "ar": {
+              "name": "العودة المدرسيّة",
+              "description": "عملت الجمعيّة منذ تأسيسها على توفير الموارد الماليّة لشراء اللّوازم المدرسيّة وإحكام توزيعها على مستحقّيها بإعداد قائمات في الغرض وترتيبها حسب أولويّة مستحقّيها. وقد بلغ عدد التلاميذ المستفيدين سنة 2023 591 تلميذ. كما قامت الجمعية خلال سنة 2023 بحملة لتوزيع الأدوات المدرسية على مستحقيها ببعض المدارس بالقلعة الكبرى – مدرسة الزيتونة، مدرسة بن عيسى، مدرسة أولاد الصلعاني، مدرسة القبو."
+            },
+            "fr": {
+              "name": "Rentrée scolaire",
+              "description": "Depuis sa création, l'association a travaillé à fournir les ressources financières pour acheter les fournitures scolaires et les distribuer aux ayants droit en établissant des listes à cet effet et en les classant par ordre de priorité. En 2023, 591 élèves ont bénéficié de cette aide. L'association a également mené une campagne en 2023 pour distribuer des fournitures scolaires aux ayants droit dans certaines écoles de Kalaa Kebira – École Al-Zaytouna, École Ben Issa, École Awlad Al-Sal'ani, École Al-Qabou."
+            }
+          },
+          {
+            "ar": {
+              "name": "القافلات الخيريّة",
+              "description": "نظّمت جمعيّة أريج قافلات خيريّة إلى عدّة مناطق من الجمهوريّة التّونسيّة ( ريف القلعة الكبرى، الشّمال الغربي، بوعرادة، القصرين، النفيضة، المزاوغة، ولاية نابل...) توزّع من خلالها ملابس، أغطية، معدّات منزليّة، موادّ غذائيّة وموادّ تنظيف."
+            },
+            "fr": {
+              "name": "Caravanes caritatives",
+              "description": "L'association Areej a organisé des caravanes caritatives dans plusieurs régions de la République tunisienne (rural Kalaa Kebira, nord-ouest, Bouarada, Kasserine, Enfidha, Mazawga, gouvernorat de Nabeul...), distribuant des vêtements, couvertures, équipements ménagers, produits alimentaires et de nettoyage."
+            }
+          },
+          {
+            "ar": {
+              "name": "رعاية صحيّة للمسنين فاقدي السند",
+              "description": "تقديم الأدوية والأغطية خلال ديسمبر 2021 وجانفي 2022."
+            },
+            "fr": {
+              "name": "Soins de santé pour les personnes âgées sans soutien",
+              "description": "Distribution de médicaments et de couvertures en décembre 2021 et janvier 2022."
+            }
+          },
+          {
+            "ar": {
+              "name": "حملة شتاء دافئ",
+              "description": "تواصل حملة شتاء دافئ خلال شتاء 2022 في مناطق مختلفة خاصة بريف القلعة الكبرى."
+            },
+            "fr": {
+              "name": "Campagne pour un hiver chaud",
+              "description": "Poursuite de la campagne pour un hiver chaud durant l'hiver 2022 dans différentes régions, notamment dans le rural de Kalaa Kebira."
+            }
+          },
+          {
+            "ar": {
+              "name": "توزيع الحفاظات",
+              "description": "تواصل نشاط توزيع الحفاظات على مستحقيها خلال سنة 2024 حيث بلغ عدد الأطفال 28 طفلا."
+            },
+            "fr": {
+              "name": "Distribution de couches",
+              "description": "Poursuite de l'activité de distribution de couches aux ayants droit en 2024, avec 28 enfants bénéficiaires."
             }
           }
-        ]
-      },
+        ],
+        "starDate": {
+          "ar": "",
+          "fr": "Avril 2018"
+        }
+      },      
       {
         "id": 4,
+        "image":"/projectsImages/زواج.jpg",
         "title": {
-          "fr": "Projet \"Affection\" pour l'aide aux futurs mariés",
-          "ar": "مشروع &quot;مودّة &quot; لمساعدة المقبلين على الزواج"
+          "fr": "Projet \"Mawadda\" pour aider les futurs mariés",
+          "ar": "مشروع \"مودّة\" لمساعدة المقبلين على الزواج"
         },
         "description": {
-          "fr": "L'Association ARIJ aide tout au long de l'année certains futurs mariés en leur fournissant une aide financière et matérielle (ameublement, vêtements, mobilier) afin de contribuer à alléger le fardeau et les coûts du mariage.",
+          "fr": "Tout au long de l'année, l'association Areej aide certains futurs mariés en leur fournissant une aide financière et matérielle (literie, vêtements, meubles), contribuant ainsi à alléger les charges et les coûts du mariage.",
           "ar": "تساعد جمعيّة أريج على مدار السنة بعض المقبلين على الزواج وذلك من خلال تقديم المساعدات المالية والعينية (مفروشات و ملابس و أثاث) إسهاما منها في تخفيف أعباء وتكاليف الزواج"
         },
-        "activities": [
-          {
-            "name": {
-              "fr": "Aide aux futurs mariés",
-              "ar": "دعم المقبلين على الزواج"
-            },
-            "description": {
-              "fr": "Inclut l'aide financière et matérielle pour les futurs mariés.",
-              "ar": "تشمل المساعدة المالية والعينية للمقبلين على الزواج."
-            }
-          }
-        ]
-      },
+        "activities": [],
+        "starDate": {
+          "ar": "",
+          "fr": "Avril 2018"
+        }
+      },      
       {
+       
         "id": 5,
+        "image":"/projectsImages/ دعم المشاريع الصغرى.jpg",
         "title": {
-          "fr": "Projet \"Soutien\" pour les micro-entreprises",
-          "ar": "مشروع &quot;دعم&quot; للمشاريع الصغرى"
+          "fr": "Projet \"Daam\" pour les microprojets",
+          "ar": "مشروع \"دعم\" للمشاريع الصغرى"
         },
         "description": {
-          "fr": "L'Association ARIJ participe à certaines initiatives de développement pour les veuves et les familles pauvres afin de préserver leur dignité et de les rendre autonomes pour l'avenir. Dans cette optique, l'Association ARIJ travaille à transformer les familles pauvres et nécessiteuses en familles productrices capables de générer un revenu stable, garantissant ainsi un meilleur niveau de vie et les rendant capables de répondre à leurs besoins sans avoir besoin d'aide. Parmi les projets de micro-entreprise auxquels l'Association a contribué figurent la couture, la vente de produits de nettoyage, la coiffure, le kiosque, etc.",
-          "ar": "تساهم جمعيّة أريج في بعض المشاريع التنموية لفائدة الأرامل و الأسر الفقيرة وذلك بهدف حفظ كرامة هذه الأسر و تمكينها من الاعتماد على نفسها في المستقبل من هذا المنطلق تعمل جمعيّة أريج على تحويل الأسر الفقيرة المحتاجة إلى أسر منتجة قادرة على توفير دخل ثابت يضمن لها مستوى معيشيا أفضل، ويجعلها قادرة على تحقيق متطلباتها دون الحاجة إلى مساعدة. من أهمّ المشاريع الصغرى التي ساهمت بها الجمعيّة : مشروع خياطة, مشروع لبيع مواد تنظيف, مشروع حلاق, مشروع كشك ..."
+          "fr": "L'association Areej contribue à certains projets de développement au profit des veuves et des familles pauvres afin de préserver la dignité de ces familles et de les rendre capables de subvenir à leurs besoins à l'avenir. Dans cette optique, l'association Areej travaille à transformer les familles pauvres et nécessiteuses en familles productives, capables de générer un revenu stable qui leur assure un meilleur niveau de vie et leur permet de satisfaire leurs besoins sans avoir besoin d'aide. Parmi les microprojets les plus importants auxquels l'association a contribué : un projet de couture, un projet de vente de produits de nettoyage, un projet de salon de coiffure, un projet de kiosque...",
+          "ar": "تساهم جمعيّة أريج في بعض المشاريع التنموية لفائدة الأرامل و الأسر الفقيرة وذلك بهدف حفظ كرامة هذه الأسر و تمكينها من الاعتماد على نفسها في المستقبل من هذا المنطلق تعمل جمعيّة أريج على تحويل الأسر الفقيرة المحتاجة إلى أسر منتجة قادرة على توفير دخل ثابت يضمن لها مستوى معيشيا أفضل، ويجعلها قادرة على تحقيق متطلباتها دون الحاجة إلى مساعدة. من أهمّ المشاريع الصغرى التي ساهمت بها الجمعيّة : مشروع خياطة, مشروع لبيع مواد ّ تنظيف , مشروع حلاق, مشروع كشك ..."
         },
-        "activities": [
-          {
-            "name": {
-              "fr": "Soutien aux micro-entreprises",
-              "ar": "دعم المشاريع الصغرى"
-            },
-            "description": {
-              "fr": "L'association fournit un soutien financier et technique aux micro-entreprises pour les aider à démarrer et à se développer.",
-              "ar": "تقدم الجمعية الدعم المالي والفني للمشاريع الصغيرة لمساعدتها على البدء والتطور."
-            }
-          }
-        ]
-      },
+        "activities": [],
+        "starDate": {
+          "ar": "",
+          "fr": "Avril 2018"
+        }
+      },      
       {
         "id": 6,
+        "image":"/projectsImages/بالشراكة مع IFTمشروع تعليم.jpg",
         "title": {
           "fr": "Projet d'amélioration du logement",
           "ar": "مشروع تحسين مسكن"
         },
         "description": {
           "fr": "Ce projet vise à améliorer les conditions de logement des familles défavorisées en leur fournissant une aide pour rénover ou reconstruire leurs logements.",
-          "ar": "يهدف هذا المشروع إلى تحسين ظروف السكن للعائلات ذات الدخل المحدود عن طريق تقديم المساعدة في تجديد أو إعادة بناء منازلهم."
-        },
-        "activities": [
-          {
-            "name": {
-              "fr": "Rénovation des logements",
-              "ar": "تجديد المساكن"
-            },
-            "description": {
-              "fr": "L'association fournit une assistance financière et technique pour rénover les logements des familles dans le besoin.",
-              "ar": "تقدم الجمعية الدعم المالي والفني لتجديد مساكن العائلات المحتاجة."
-            }
-          }
-        ]
-      },
-      {
-        "id": 7,
-        "title": {
-          "fr": "Projet \"Éducation\"",
-          "ar": "مشروع &quot;تعليم&quot;"
-        },
-        "description": {
-          "fr": "Le domaine éducatif de l'Association ARIJ est prestigieux, ce qui se manifeste par l'importance accordée aux activités réalisées et nous mentionnons à cet égard certaines des activités:",
           "ar": "للمجال التّعليمي التربوي في جمعيّة أريج مرموقة تجلّت من خلال إبلائه أهميّة من حيث الأنشطة المنجزة فيه ونذكر في الصدّد بعض الأنشطة."
         },
         "activities": [
           {
-            "name": {
-              "fr": "Académie ARIJ",
-              "ar": "أكادميّة أريج"
+            "fr": {
+              "name": "Académie Areej",
+              "description": "Il s'agit d'un programme estival pour les enfants organisé chaque année par l'association Areej. Les activités proposées comprennent l'apprentissage des langues, le dessin, l'artisanat, le bricolage, le calcul mental, le développement personnel."
             },
-            "description": {
-              "fr": "C'est un programme d'été pour les enfants que l'association organise chaque année. Les activités pendant ce programme comprennent, entre autres, les langues, le dessin, l'artisanat, le bricolage, les mathématiques mentales, le développement personnel.",
-              "ar": "هي دورة صيفية للأطفال دأبت جمعيّة أريج على تنظيمها سنويّا . تتنوع الأنشطة خلال هذه الدورة نذكر من أهمها اللغات, الرسم, البراعة اليدوية, البريكولاج, الحساب الذهني, التنمية البشريّة."
+            "ar": {
+              "name": "أكادميّة أريج",
+              "description": "هي دورة صيفية للأطفال دأبت جمعيّة أريج على تنظيمها سنويّا . تتنوع الأنشطة خلال هذه الدورة نذكر من أهمها  اللغات, الرسم, البراعة اليدوية, البريكولاج, الحساب الذهني, التنمية البشريّة"
+            }
+          },
+          {
+            "fr": {
+              "name": "",
+              "description": ""
+            },
+            "ar": {
+              "name": "قفّة رمضان",
+              "description": "Aide aux familles nécessiteuses pendant le mois sacré."
+            }
+          },
+          {
+            "fr": {
+              "name": "Cours de formation",
+              "description": ""
+            },
+            "ar": {
+              "name": "دورات تكوينيّة",
+              "description": ""
+            }
+          },
+          {
+            "fr": {
+              "name": "Activités culturelles et récréatives",
+              "description": ""
+            },
+            "ar": {
+              "name": "أنشطة ثقافيّة و ترفيهيّة",
+              "description": ""
+            }
+          },
+          {
+            "fr": {
+              "name": "Cours d'alphabétisation pour adultes",
+              "description": ""
+            },
+            "ar": {
+              "name": "دروس تعليم الكبار",
+              "description": ""
+            }
+          },
+          {
+            "fr": {
+              "name": "Séances de sensibilisation pour les mères",
+              "description": ""
+            },
+            "ar": {
+              "name": "حصص توعويّة للأمهات",
+              "description": ""
+            }
+          },
+          {
+            "fr": {
+              "name": "Réhabilitation des institutions éducatives",
+              "description": "L'association Areej a pris soin de réhabiliter certaines écoles primaires et secondaires pour améliorer les conditions d'apprentissage, telles que l'école de Bouarada, l'école Zitouna et le collège Ajmi Ben Saad. Elle a également équipé des salles de classe avec des équipements modernes, de la décoration et de l'éclairage, comme à l'école Ajmi Ben Saad à Kalaat Al-Andalous et au collège Saheloul à Hammam Sousse. Pour renforcer ces activités, Areej a conclu un partenariat avec la délégation régionale de l'éducation et a également mis en place un projet de partenariat avec sous le titre éducation."
+            },
+            "ar": {
+              "name": "ترميم مؤسّسات تربويّة",
+              "description": "حرصت جمعيّة أريج على تهيئة بعض المدارس الابتدائيّة و الإعداديّة و ترميمها كمدرسة بوعرادة و مدرسة الزيتونة و المدرسة الإعداديّة العجمي بن سعد لغاية تحسين ظروف التّعلم.  كما قامت الجمعيّة في هذا الإطار بتجهيز قاعات تعليم نموذجيّة من حيث المعدات , التزويق والإضاءةو ذلك في كل من المدرسة الإعداديّة العجمي بن سعد بالقلعة الكبرى و المدرسة الإعداديّة سهلول بحمّام سوسة.و فيما يلي صورة من القاعة المجهزة المدرسة الإعداديّة العجمي بن سعد.و لتعزيز هذه الأنشطة  قامت أريج بعقد اتفاقيّة شراكة مع المندوبيّة الجهويّة للتّربية  كما أسّست مشروع شراكة مع                            تحت عنوان تعليم."
             }
           }
-        ]
+        ],
+        "starDate": {
+          "ar": "تاريخ الانطلاق:جويلية 2018",
+          "fr": "Date de lancement: Juillet 2018"
+        }
       },
+      {
+        "id": 7,
+        "image":"/projectsImages/صحتي.jpg",
+        "title": {
+          "fr": "Projet \"Éducation\"",
+          "ar": "مشروع صحتي"
+        },
+        "description": [
+          {
+            "fr": "Le domaine éducatif de l'Association ARIJ est prestigieux, ce qui se manifeste par l'importance accordée aux activités réalisées et nous mentionnons à cet égard certaines des activités:",
+            "ar": "نشطت جمعيّة أريج بشكل هامّ في مجال الصحّة حيث تتكفل الجمعيّة بالعديد من الملفات الصحيّة من خلال تقديم مساعدات ماديّة لإجراء الفحوصات اللازمة .نذكر من أهمّها ملف الطّفل أحمد قايد الذي تكفلت الجمعيّة بإرساله إلى تركيا للقيام بعمليّة زرع النّخاع وقد جمعت التبرعات عبر الإرساليات القصيرة. كما تجسّد نشاط الجمعيّة في هذا المجال من خلال الخيمات الصحيّة*- توزيع النظّارات الطبيّة على مستحقيّها*- حملات تعقيم وحصص توعويّة حول فيروس كورونا- تقديم كراسي متحرّكة لذوي الاحتياجات الخصوصيّة-إعارة الأجهزة الشبه طبيّة-concentrateur d’oxygène  إعارة-ندوة حول التقصي المبكر لسرطان الثدي-حملات تقصي النظر"
+          }
+        ],
+        "activities": [],
+        "starDate": {
+          "ar": "",
+          "fr": "Avril 2018"
+        }
+      },      
       {
         "id": 8,
+        "image":"/projectsImages/صحتي.jpg",
         "title": {
           "fr": "Projet \"Ma santé\"",
-          "ar": "مشروع &quot;صحتي&quot;"
+          "ar": "مشروع سقيا لتزويد بعض االفقراء بالماء الصالح للشراب"
         },
-        "description": {
-          "fr": "L'association ARIJ a joué un rôle important dans le domaine de la santé en prenant en charge de nombreux dossiers de santé en fournissant une aide financière pour les examens nécessaires. Parmi les activités les plus importantes figurent les cliniques de santé, la distribution de lunettes aux bénéficiaires, les campagnes de désinfection et de sensibilisation sur le virus Corona, la fourniture de fauteuils roulants aux personnes handicapées, le prêt d'équipements médicaux semi-professionnels, le concentrateur d'oxygène, le séminaire sur le dépistage précoce du cancer du sein, les campagnes de dépistage de la vue, etc.",
-          "ar": "نشطت جمعيّة أريج بشكل هامّ في مجال الصحّة حيث تتكفل الجمعيّة بالعديد من الملفات الصحيّة من خلال تقديم مساعدات ماديّة لإجراء الفحوصات اللازمة. يتجسّد نشاط الجمعيّة في هذا المجال من خلال: الخيمات الصحيّة*, توزيع النظّارات الطبيّة على مستحقيّها*, حملات تعقيم وحصص توعويّة حول فيروس كورونا, تقديم كراسي متحرّكة لذوي الاحتياجات الخصوصيّة, إعارة الأجهزة الشبه طبيّة, concentrateur d’oxygène إعارة, ندوة حول التقصي المبكر لسرطان الثدي, حملات تقصي النظر ..."
-        },
-        "activities": [
+        "description": [
           {
-            "name": {
-              "fr": "Soutien médical",
-              "ar": "دعم طبي"
-            },
-            "description": {
-              "fr": "L'association fournit une assistance médicale aux personnes dans le besoin, y compris des consultations et des traitements.",
-              "ar": "تقدم الجمعية الدعم الطبي للأشخاص المحتاجين، بما في ذلك الاستشارات والعلاجات."
-            }
+            "ar": "تزود جمعيّة أريج بعض العائلات المعوزة بالماء الصالح للشراب",
+            "fr": "La fondation ARIJ fournit de l'eau potable à certaines familles nécessiteuses."
           }
-        ]
-      },
+        ],
+        "activities": [],
+        "starDate": {
+          "ar": "",
+          "fr": "Avril 2018"
+        }
+      },      
       {
         "id": 9,
+        "image":"/projectsImages/صحتي.jpg",
         "title": {
-          "fr": "Projet \"Sakiya\" pour la fourniture d'eau potable",
-          "ar": "مشروع &quot;سقيا&quot; لتزويد بعض االفقراء بالماء الصالح للشراب"
-        },
-        "description": {
-          "fr": "L'association ARIJ fournit de l'eau potable à certaines familles défavorisées.",
-          "ar": "تزود جمعيّة أريج بعض العائلات المعوزة بالماء الصالح للشراب"
-        },
-        "activities": [
-          {
-            "name": {
-              "fr": "Fourniture d'eau potable",
-              "ar": "توفير الماء الصالح للشراب"
-            },
-            "description": {
-              "fr": "L'association ARIJ organise la distribution d'eau potable aux familles dans le besoin.",
-              "ar": "تنظم جمعيّة أريج توزيع الماء الصالح للشراب على العائلات المحتاجة."
-            }
-          }
-        ]
-      },
-      {
-        "id": 10,
-        "title": {
-          "fr": "Projet de stock ARIJ",
+          "fr": "Entrepôt ARIJ",
           "ar": "مخزن أريج"
         },
-        "description": {
-          "fr": "L'association ARIJ reçoit quotidiennement des dons matériels des citoyens, notamment des vêtements, des chaussures, des meubles et des équipements ménagers. Un jour par semaine, le stock ARIJ est ouvert aux bénéficiaires.",
-          "ar": "تستقبل جمعيّة أريج يوميّا التبرعات العينيّة من المواطنين و التي تتمثل في ملابس, أحذية , أثاث, معدات منزليّة .وتمّ تخصيص يوم أسبوعي يفتح فيه مخزن أريج لفائدة المستحقين ."
-        },
-        "activities": [
+        "description": [
           {
-            "name": {
-              "fr": "Distribution de dons",
-              "ar": "توزيع التبرعات"
-            },
-            "description": {
-              "fr": "L'association ARIJ distribue les dons aux personnes dans le besoin, y compris les vêtements, les chaussures et les meubles.",
-              "ar": "تقوم جمعية أريج بتوزيع التبرعات على الأشخاص المحتاجين، بما في ذلك الملابس والأحذية والأثاث."
-            }
+            "fr": "La fondation ARIJ reçoit quotidiennement des dons en nature de la part des citoyens, notamment des vêtements, des chaussures, des meubles et des équipements domestiques. Un jour par semaine, l'entrepôt ARIJ ouvre ses portes aux bénéficiaires.",
+            "ar": ": تستقبل جمعيّة أريج يوميّا التبرعات العينيّة من المواطنين و التي تتمثل في ملابس, أحذية , أثاث, معدات منزليّة .وتمّ تخصيص يوم أسبوعي يفتح فيه مخزن أريج لفائدة المستحقين ."
           }
-        ]
+        ],
+        "starDate": {
+          "ar": "",
+          "fr": "Avril 2018"
+        },
+        "activities": []
       }
     ]
   }
