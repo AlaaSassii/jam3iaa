@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
+import { FaLink } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { useLanguage } from "../hooks/useLanguage";
 import { components } from "../lang";
@@ -169,11 +170,7 @@ const Footer = ({ language }) => {
                   </Link>
                 </li>
 
-                <li className='mb-2'>
-                  <Link href='/home/events'>
-                    {components.Navbar?.[language].projects}
-                  </Link>
-                </li>
+                
               </ul>
             </div>
             <div>
@@ -181,46 +178,33 @@ const Footer = ({ language }) => {
                 {components.footer?.[language]?.Connectez}
               </h3>
               <div className='flex space-x-4'>
-                <a href='#' className='text-rose-400 hover:text-rose-600'>
+                <a href='https://www.facebook.com/associationarij' target="_black" className='text-rose-400 hover:text-rose-600'>
                   <FaFacebook size={25} />
                 </a>
                 <a href='#' className='text-rose-400 hover:text-rose-600'>
                   <AiFillInstagram size={25} />
                 </a>
-                <a href='#' className='text-rose-400 hover:text-rose-600'>
-                  <FaTwitter size={25} />
-                </a>
+                
               </div>
             </div>
           </div>
-          <div className='mt-4 text-sm'>
-            <p>
-              {components.footer?.[language]?.FAQ} |{" "}
-              <a href='#about' className='text-rose-400 hover:text-rose-600'>
-                {
-                  components.footer?.[language]?.[
-                    "Politique de Confidentialité"
-                  ]
-                }
-              </a>{" "}
-              |{" "}
-              <a href='#' className='text-rose-400 hover:text-rose-600'>
-                {components.footer?.[language]?.["Conditions d'Utilisation"]}
-              </a>
-            </p>
-          </div>
+          
         </div>
       </footer>
-      <div className='bg-gray-800 text-white py-4'>
+      <div className='bg-rose-700 text-white py-2'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='flex flex-col items-center justify-center sm:flex-row sm:justify-between'>
             <p className='text-sm mb-2 sm:mb-0'>
               {" "}
               {components.footer?.[language]?.["Arij Association"]}
             </p>
-            <p className='text-sm'>
-              © {new Date().getFullYear()} Rayen ben hassen & Ala sassi
-            </p>
+            <div className='text-sm flex flex-col md:flex-row gap-3 items-center'>
+              
+              <div>© {new Date().getFullYear()} </div>
+              
+              <Link href="https://roubly.com" className=" flex items-center gap-1"> <div> | Created By</div> <div className="text-black">Roubly.com</div> <FaLink className="text-black"/> </Link>
+              <div> | support@roubly.com</div>
+            </div>
           </div>
         </div>
       </div>

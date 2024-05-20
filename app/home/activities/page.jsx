@@ -51,7 +51,7 @@ const Page = () => {
   return (
     <>
       <Navbar language={language} setLanguage={setLanguage} />
-      <div className='h-screen'>
+      <div className=''>
         <div className='flex flex-col justify-center items-center mt-20'>
           <div>
             <label className='input input-bordered flex items-center gap-2'>
