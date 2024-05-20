@@ -12,6 +12,7 @@ import ModalRejoigne from "../../components/ModalRejoigne";
 import Contact from "../../components/Contact";
 import Footer from "../../components/Footer";
 import { useLanguage } from "../../hooks/useLanguage";
+import ToasterProvider from "../../providers/ToasterProvider";
 
 
 const page = () => {
@@ -19,17 +20,19 @@ const page = () => {
   console.log({ language });
   return (
     <>
-      <Navbar language={language} setLanguage={setLanguage} />
-      <Home language={language} />
-      <Welcome language={language} />
-      <About language={language} />
-      <Valunteer language={language} />
-      <Rejoignez language={language} />
-      <Events language={language} />
-      <Activity language={language} />
-      <ModalRejoigne language={language} />
-      <Contact language={language} />
-      <Footer language={language} />
+        <ToasterProvider />
+        <Navbar language={language} setLanguage={setLanguage} />
+        <Home language={language} />
+        <Welcome language={language} />
+        <About language={language} />
+        <Valunteer language={language} />
+        <Rejoignez language={language} />
+        <Events language={language} />
+        <Activity language={language} />
+        <ModalRejoigne language={language} />
+        <Contact language={language} />
+        <Footer language={language} />
+      
     </>
   );
 };

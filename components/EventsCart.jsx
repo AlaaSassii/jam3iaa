@@ -19,7 +19,7 @@ const EventsCart = ({ title, path, disc, adress, link }) => {
             NEW
           </div>
         </h2>
-        <div className='flex justify-center items-center gap-10'>
+        <div className='flex justify-around items-center gap-10'>
           <div className='flex flex-col gap-0'>
             <div className='flex gap-2 w-[30%] '>
               <p className='font-semibold text-xs md:text-sm'>Adresse:</p>
