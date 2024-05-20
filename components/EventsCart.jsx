@@ -10,7 +10,7 @@ const EventsCart = ({ title, path, disc, adress, link }) => {
       onClick={() => router.push(link)}
     >
       <figure>
-        <img src={path} alt='Shoes' />
+        <img src={path} alt='Shoes' className='w-full h-[300px]' />
       </figure>
       <div className='flex flex-col p-3 gap-0'>
         <h2 className='card-title'>
@@ -31,7 +31,7 @@ const EventsCart = ({ title, path, disc, adress, link }) => {
             </div>
           </div>
 
-          <div className='text-xs '>
+          <div className='text-xs overflow-hidden whitespace-nowrap text-overflow-ellipsis'>
             <div className='font-semibold text-xs md:text-sm'>
               Description :
             </div>

@@ -15,14 +15,14 @@ export const getSupports = async () => {
     return data.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
 };
 
-export const createSupport = async (typeDonate, nom, prenom, age, number, adresse, sexe, email) => {
-    const docRef = await addDoc(supportCollection, { typeDonate, nom, prenom, age, number, adresse, sexe, email });
+export const createSupport = async (typeDonate, nom, prenom, age, number, adresse, sexe, email, montant) => {
+    const docRef = await addDoc(supportCollection, { typeDonate, nom, prenom, age, number, adresse, sexe, email, montant });
     return docRef.id;
 };
 
-export const editSupport = async (typeDonate, nom, prenom, age, number, adresse, sexe, email) => {
+export const editSupport = async (typeDonate, nom, prenom, age, number, adresse, sexe, email, montant) => {
     const supportDoc = doc(db, "support", id);
-    const newSupport = { typeDonate, nom, prenom, age, number, adresse, sexe, email };
+    const newSupport = { typeDonate, nom, prenom, age, number, adresse, sexe, email, montant };
     await updateDoc(supportDoc, newSupport);
 };
 

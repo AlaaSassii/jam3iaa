@@ -14,6 +14,7 @@ const ModalDonate = ({ language, setLanguage }) => {
     adresse: "",
     sexe: "",
     email: "",
+    montant: "0",
   });
 
   const handleChange = (e) => {
@@ -25,6 +26,9 @@ const ModalDonate = ({ language, setLanguage }) => {
   };
   const selectChange = (e) => {
     setFormData({ ...formData, typeDonate: e.target.value });
+  };
+  const selectChangeAmount = (e) => {
+    setFormData({ ...formData, montant: e.target.value });
   };
   console.log({ formData });
   const handleSubmit = async (e) => {
@@ -38,7 +42,8 @@ const ModalDonate = ({ language, setLanguage }) => {
         formData.number,
         formData.adresse,
         formData.sexe,
-        formData.email
+        formData.email,
+        formData.montant
       );
       console.log("Document added with ID: ", docId);
       setFormData({
@@ -50,6 +55,7 @@ const ModalDonate = ({ language, setLanguage }) => {
         adresse: "",
         sexe: "",
         email: "",
+        montant: "",
       });
     } catch (error) {
       console.error("Error adding document: ", error);
@@ -172,6 +178,27 @@ const ModalDonate = ({ language, setLanguage }) => {
                     <option value='femme'>Femme</option>
                   </select>
                 </div>
+                {formData.typeDonate === "donate" ? (
+                  <div>
+                    <label htmlFor='amount' className='block mb-1'>
+                      {language === "ar" ? "كمية" : "montant"}
+                    </label>
+                    <select
+                      id='amount'
+                      name='amount'
+                      value={formData.montant}
+                      onChange={selectChangeAmount}
+                      className='w-full px-3 py-2 border rounded-md'
+                      defaultValue=''
+                    >
+                      <option value=''>Select</option>
+                      <option value='100'>100</option>
+                      <option value='200'>200</option>
+                      <option value='400'>400</option>
+                      <option value='500'>500</option>
+                    </select>
+                  </div>
+                ) : null}
                 <div>
                   <label htmlFor='email' className='block mb-1'>
                     {components.Models?.[language].email}

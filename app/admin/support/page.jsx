@@ -35,6 +35,7 @@ const page = () => {
               <th>Gender</th>
               <th>Email</th>
               <th>Type of Donate</th>
+              <th>montant</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -49,6 +50,7 @@ const page = () => {
                 <td>{support.sexe}</td>
                 <td>{support.email}</td>
                 <td>{support.typeDonate}</td>
+                <td>{support?.montant}</td>
                 <td
                   className='cursor-pointer'
                   onClick={() => handleDelete(support.id)}
