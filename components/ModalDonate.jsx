@@ -183,20 +183,13 @@ const ModalDonate = ({ language, setLanguage }) => {
                     <label htmlFor='amount' className='block mb-1'>
                       {language === "ar" ? "كمية" : "montant"}
                     </label>
-                    <select
+                    <input
                       id='amount'
                       name='amount'
                       value={formData.montant}
-                      onChange={selectChangeAmount}
+                      onChange={handleChange}
                       className='w-full px-3 py-2 border rounded-md'
-                      defaultValue=''
-                    >
-                      <option value=''>Select</option>
-                      <option value='100'>100</option>
-                      <option value='200'>200</option>
-                      <option value='400'>400</option>
-                      <option value='500'>500</option>
-                    </select>
+                    />
                   </div>
                 ) : null}
                 <div>

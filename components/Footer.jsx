@@ -5,6 +5,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { useLanguage } from "../hooks/useLanguage";
 import { components } from "../lang";
+import Link from "next/link";
 
 const Footer = ({ language }) => {
   if (language === "ar")
@@ -33,27 +34,35 @@ const Footer = ({ language }) => {
                 </h3>
                 <ul className='list-none p-0'>
                   <li className='mb-2'>
-                    <a href='#home'>{components.Navbar?.[language]?.Accueil}</a>
+                    <Link href='/home#home'>
+                      {components.Navbar?.[language]?.Accueil}
+                    </Link>
                   </li>
                   <li className='mb-2'>
-                    <a href='#about'>
-                      {components?.Navbar?.[language]?.aProposNous}
-                    </a>
+                    <Link href='/home#about'>
+                      {components.Navbar?.[language]?.aProposNous}
+                    </Link>
                   </li>
                   <li className='mb-2'>
-                    <a href='#events'>
-                      {components.Navbar?.[language].Événementso}
-                    </a>
+                    <Link href='/home/events'>
+                      {components.Navbar?.[language].Événements}
+                    </Link>
                   </li>
                   <li className='mb-2'>
-                    <a href='#activity'>
+                    <Link href='/home/activities'>
                       {components.Navbar?.[language].Activités}
-                    </a>
+                    </Link>
                   </li>
                   <li className='mb-2'>
-                    <a href='#contact'>
+                    <Link href='/home#contact'>
                       {components.Navbar?.[language].contactezNous}
-                    </a>
+                    </Link>
+                  </li>
+
+                  <li className='mb-2'>
+                    <Link href='/home/events'>
+                      {components.Navbar?.[language].projects}
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -131,28 +140,39 @@ const Footer = ({ language }) => {
                 {components.footer?.[language].liensRapide}
               </h3>
               <ul className='list-none p-0'>
-                <li className='mb-2'>
+                {/* <li className='mb-2'>
                   <a href='#home'>{components.Navbar?.[language]?.Accueil}</a>
+                </li> */}
+                <li className='mb-2'>
+                  <Link href='/home#home'>
+                    {components.Navbar?.[language]?.Accueil}
+                  </Link>
                 </li>
                 <li className='mb-2'>
-                  <a href='#about'>
-                    {components?.Navbar?.[language]?.aProposNous}
-                  </a>
+                  <Link href='/home#about'>
+                    {components.Navbar?.[language]?.aProposNous}
+                  </Link>
                 </li>
                 <li className='mb-2'>
-                  <a href='#events'>
-                    {components.Navbar?.[language].Événementso}
-                  </a>
+                  <Link href='/home/events'>
+                    {components.Navbar?.[language].Événements}
+                  </Link>
                 </li>
                 <li className='mb-2'>
-                  <a href='#activity'>
+                  <Link href='/home/activities'>
                     {components.Navbar?.[language].Activités}
-                  </a>
+                  </Link>
                 </li>
                 <li className='mb-2'>
-                  <a href='#contact'>
+                  <Link href='/home#contact'>
                     {components.Navbar?.[language].contactezNous}
-                  </a>
+                  </Link>
+                </li>
+
+                <li className='mb-2'>
+                  <Link href='/home/events'>
+                    {components.Navbar?.[language].projects}
+                  </Link>
                 </li>
               </ul>
             </div>
