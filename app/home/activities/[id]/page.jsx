@@ -51,7 +51,8 @@ const page = ({ params }) => {
                 <div>{data.address}</div>
               </p>
             </div>
-            <a href={data.link} target='_blank'>
+            <h1 className='inline'>Link: </h1><br />
+            <a href={data.link} className="text-blue-500" target='_blank'>
               {data.link}
             </a>
             {/* Add more fields as needed */}
