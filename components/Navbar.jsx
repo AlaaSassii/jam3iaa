@@ -102,22 +102,22 @@ const Navbar = ({ language, setLanguage }) => {
                 {components.Navbar?.[language].contactezNous}
               </Link>
             </li>
+            
+            <div className={` projects`}>
+              <li className='cursor-pointer px-2 hover:text-black  transition relative '>
+                  {components.Navbar?.[language].projects}
+              </li>
 
-            <li className='cursor-pointer px-2 hover:text-black  transition relative projects'>
-              <Link href='/home/events'>
-                {components.Navbar?.[language].projects}
-              </Link>
-            </li>
-
-            <ul className='absolute bg-white p-2 rounded projects_liste '>
-              {data?.map((p) => (
-                <Link href={`/home/projects/${p.id}`}>
-                  <li className='hover:text-rose-500 hover:bg-rose-100 transition rounded p-2 text-end w-40 text-xs'>
-                    {p.title?.[language]}
-                  </li>
-                </Link>
-              ))}
-            </ul>
+              <ul className='absolute bg-white p-2 rounded projects_liste '>
+                {data?.map((p) => (
+                  <Link href={`/home/projects/${p.id}`}>
+                    <li className='hover:text-rose-500 hover:bg-rose-100 transition rounded p-2 text-center w-40 text-xs'>
+                      {p.title?.[language]}
+                    </li>
+                  </Link>
+                ))}
+              </ul>
+            </div>
 
             <div
               className=' lg:hidden bg-white text-sm  p-2 my-2 rounded-2xl font-semibold cursor-pointer hover:text-rose-500 '

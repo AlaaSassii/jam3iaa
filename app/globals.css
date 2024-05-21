@@ -23,14 +23,12 @@
 .rejoindre{
 
   width: 100%;
-    
-    background-color: #f00; /* fallback color */
-    background-image: url('/slide/2.jpg');
-    background-size: cover;
-    background-position: center;
-    
-    background-color: rgba(39, 34, 34, 0.5); /* Red color with 50% opacity */
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #f00; /* fallback color */
+  background-image: url('/slide/2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(39, 34, 34, 0.5); /* Red color with 50% opacity */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
 
@@ -48,7 +46,7 @@
 }
 
 .projects:hover .projects_liste{
-  display: block
+  display: block;
 }
 
 .projects_liste{
