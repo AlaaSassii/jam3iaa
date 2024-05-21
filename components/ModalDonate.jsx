@@ -184,8 +184,8 @@ const ModalDonate = ({ language, setLanguage }) => {
                       {language === "ar" ? "كمية" : "montant"}
                     </label>
                     <input
-                      id='amount'
-                      name='amount'
+                      id='montant'
+                      name='montant'
                       value={formData.montant}
                       onChange={handleChange}
                       className='w-full px-3 py-2 border rounded-md'
