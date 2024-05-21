@@ -6,11 +6,11 @@ const EventsCart = ({ title, path, disc, adress, link }) => {
   const router = useRouter();
   return (
     <div
-      className='card w-full bg-base-100 shadow-xl cursor-pointer transition hover:-translate-y-2 hover:bg-rose-100 z-5'
+      className='card w-full bg-base-100 cursor-pointer transition hover:-translate-y-2 overflow-hidden'
       onClick={() => router.push(link)}
     >
-      <figure>
-        <img src={path} alt='Shoes' className='w-full h-[300px]' />
+      <figure className='w-full h-[300px]'>
+        <img src={path} alt='Shoes' className="bg-cover" />
       </figure>
       <div className='flex flex-col p-3 gap-0'>
         <h2 className='card-title'>

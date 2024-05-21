@@ -55,7 +55,7 @@ const Page = ({ params }) => {
             <Link
               href={data?.link || ""}
               target='_blank'
-              className='text-red-500'
+              className="text-blue-500"
             >
               {data.link}
             </Link>
