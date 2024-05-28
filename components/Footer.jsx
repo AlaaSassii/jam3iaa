@@ -169,8 +169,6 @@ const Footer = ({ language }) => {
                     {components.Navbar?.[language].contactezNous}
                   </Link>
                 </li>
-
-                
               </ul>
             </div>
             <div>
@@ -178,17 +176,19 @@ const Footer = ({ language }) => {
                 {components.footer?.[language]?.Connectez}
               </h3>
               <div className='flex space-x-4'>
-                <a href='https://www.facebook.com/associationarij' target="_black" className='text-rose-400 hover:text-rose-600'>
+                <a
+                  href='https://www.facebook.com/associationarij'
+                  target='_black'
+                  className='text-rose-400 hover:text-rose-600'
+                >
                   <FaFacebook size={25} />
                 </a>
                 <a href='#' className='text-rose-400 hover:text-rose-600'>
                   <AiFillInstagram size={25} />
                 </a>
-                
               </div>
             </div>
           </div>
-          
         </div>
       </footer>
       <div className='bg-rose-700 text-white py-2'>
@@ -199,10 +199,17 @@ const Footer = ({ language }) => {
               {components.footer?.[language]?.["Arij Association"]}
             </p>
             <div className='text-sm flex flex-col md:flex-row gap-3 items-center'>
-              
               <div>© {new Date().getFullYear()} </div>
-              
-              <Link href="https://roubly.com" className=" flex items-center gap-1"> <div> | Created By</div> <div className="text-black">Roubly.com</div> <FaLink className="text-black"/> </Link>
+
+              <Link
+                href='https://roubly.com'
+                className=' flex items-center gap-1'
+              >
+                {" "}
+                <div> | Created By</div>{" "}
+                <div className='text-black'>Roubly.com</div>{" "}
+                <FaLink className='text-black' />{" "}
+              </Link>
               <div> | support@roubly.com</div>
             </div>
           </div>

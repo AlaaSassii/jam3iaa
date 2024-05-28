@@ -3,11 +3,9 @@ import React, { useState, useEffect } from "react";
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { components } from "../lang";
-import { useLanguage } from "../hooks/useLanguage";
 
 import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-import { FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 
 import ModalDonate from "./ModalDonate";
@@ -102,10 +100,15 @@ const Navbar = ({ language, setLanguage }) => {
                 {components.Navbar?.[language].contactezNous}
               </Link>
             </li>
-            
+
+            <li className='cursor-pointer px-2 hover:text-black transition'>
+              <Link href='/home/comptabilite'>
+                {components.Navbar?.[language].comptabilité}
+              </Link>
+            </li>
             <div className={` projects`}>
               <li className='cursor-pointer px-2 hover:text-black  transition relative '>
-                  {components.Navbar?.[language].projects}
+                {components.Navbar?.[language].projects}
               </li>
 
               <ul className='absolute bg-white p-2 rounded projects_liste '>
