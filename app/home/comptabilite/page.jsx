@@ -82,7 +82,7 @@ const page = () => {
         </div>
         <h1 className='text-4xl'>2021</h1>
 
-        <div className='flex gap-4'>
+        <div className='flex flex-col md:flex-row gap-4'>
           <Link
             target='_blank'
             href={
@@ -124,7 +124,7 @@ const page = () => {
           </Link>
         </div>
         <h1 className='text-4xl'>2020</h1>
-        <div className='flex gap-4'>
+        <div className='flex flex-col md:flex-row gap-4'>
           <Link
             target='_blank'
             href={
@@ -163,7 +163,7 @@ const page = () => {
           </Link>
         </div>
         <h1 className='text-4xl'>2019</h1>
-        <div className='flex gap-4'>
+        <div className='flex flex-col md:flex-row gap-4'>
           <Link
             target='_blank'
             href={
@@ -202,7 +202,7 @@ const page = () => {
           </Link>
         </div>
         <h1 className='text-4xl'>2018</h1>
-        <div className='flex gap-4'>
+        <div className='flex flex-col md:flex-row gap-4'>
           <Link
             target='_blank'
             href={

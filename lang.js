@@ -117,14 +117,38 @@ export const components = {
 
     'Valunteer': {
         fr: {
-            title: 'fondateurs',
-            directeur: 'directeur',
+            bigTitle:'Fondateurs',
+
+            title1: 'Dr. Mohamed Kamel Deif Allah',
+            discription1: 'Président de l\'association',
+
+            title2: 'Dr. Rabie Galla',
+            discription2: 'Chargé de la santé',
+
+            title3: 'Zomoroda Belaid',
+            discription3: 'Trésorier et coordinateur général',
+
+            title4: 'Naïla Haj Mabrouk',
+            discription4: 'Secrétaire général',
         },
         ar: {
-            title: 'المؤسسون',
-            directeur: 'المدير'
+            bigTitle:'المؤسسين',
+
+            title1: 'الدكتور محمد كمال ضيف الله  ',
+            discription1: 'رئيس الجمعية ',
+
+            title2: '   الدكتور ربيع قلالة ',
+            discription2: ' مكلف بالصحة ',
+
+            title3: '  زمردة بلعيد ',
+            discription3: '  أمين مال ومنسق عام ',
+
+            title4: '  نائلة الحاج مبارك ',
+            discription4: ' كاتب عام ',
+
         }
     },
+
 
     'Rejoignez': {
         fr: {

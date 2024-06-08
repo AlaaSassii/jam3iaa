@@ -6,7 +6,7 @@
           "fr": "Projet \"Rahma\" pour le parrainage des orphelins",
           "ar": "مشروع \"رحمة\" لكفالة الأيتام"
         },
-        "image":"/projectsImages/كفالة أيتام.jpg",
+        "image":"/projectsImages/1.png",
         "description": [
           {
             "fr": "Depuis sa création, l'association Areej prend en charge un certain nombre d'orphelins. En avril 2024, le nombre d'orphelins parrainés a atteint 404.",
@@ -33,7 +33,7 @@
           "fr": "Projet \"Ri'aya\" pour le parrainage des personnes âgées",
           "ar": "مشروع \"رعاية\" لكفالة المسنين"
         },
-        "image":"/projectsImages/رعاية مسنين.jpg",
+        "image":"/projectsImages/2.png",
         "starDate": {
           "ar": "",
           "fr": "Avril 2018"
@@ -52,7 +52,7 @@
       },
       {
         "id": 3,
-        "image":"/projectsImages/ختان جماعي.jpg",
+        "image":"/projectsImages/3.png",
         "title": {
           "fr": "Projet \"Ihsan\" pour l'aide sociale",
           "ar": "مشروع \"إحسان\" للمساعدات الاجتماعيّة"
@@ -172,7 +172,7 @@
       },      
       {
         "id": 4,
-        "image":"/projectsImages/زواج.jpg",
+        "image":"/projectsImages/4.png",
         "title": {
           "fr": "Projet \"Mawadda\" pour aider les futurs mariés",
           "ar": "مشروع \"مودّة\" لمساعدة المقبلين على الزواج"
@@ -190,7 +190,7 @@
       {
        
         "id": 5,
-        "image":"/projectsImages/دعم المشاريع الصغرى.jpg",
+        "image":"/projectsImages/5.png",
         "title": {
           "fr": "Projet \"Daam\" pour les microprojets",
           "ar": "مشروع \"دعم\" للمشاريع الصغرى"
@@ -207,7 +207,7 @@
       },      
       {
         "id": 6,
-        "image":"/projectsImages/بالشراكة مع IFTمشروع تعليم.jpg",
+        "image":"/projectsImages/6.png",
         "title": {
           "fr": "Projet d'amélioration du logement",
           "ar": "مشروع تحسين مسكن"
@@ -295,7 +295,7 @@
       },
       {
         "id": 7,
-        "image":"/projectsImages/صحتي.jpg",
+        "image":"/projectsImages/7.png",
         "title": {
           "fr": "Projet \"Éducation\"",
           "ar": "مشروع صحتي"
@@ -314,7 +314,7 @@
       },      
       {
         "id": 8,
-        "image":"/projectsImages/صحتي.jpg",
+        "image":"/projectsImages/8.png",
         "title": {
           "fr": "Projet \"Ma santé\"",
           "ar": "مشروع سقيا لتزويد بعض االفقراء بالماء الصالح للشراب"
@@ -333,7 +333,7 @@
       },      
       {
         "id": 9,
-        "image":"/projectsImages/صحتي.jpg",
+        "image":"/projectsImages/9.png",
         "title": {
           "fr": "Entrepôt ARIJ",
           "ar": "مخزن أريج"
