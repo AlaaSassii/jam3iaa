@@ -7,7 +7,8 @@ export const components = {
             Activités: 'الأنشطة',
             Donate: 'اتكفل و اتبرع',
             contactezNous: 'اتصل بنا',
-            projects: 'المشاريع'
+            projects: 'المشاريع',
+            comptabilité: 'محاسبة'
         },
         fr: {
             Accueil: 'Accueil',
@@ -16,14 +17,15 @@ export const components = {
             Activités: 'Activités',
             Donate: 'Sponsor and donate',
             contactezNous: 'Contactez nous',
-            projects: 'projects'
+            projects: 'projects',
+            comptabilité: 'comptabilité'
         }
     },
 
     'HomeC': {
         ar: {
             Title: ' بجمعيّة أريج تونس أحلى... غدوة خير  ',
-            secondTitle: ' أريج جمعيّة خيريّة ناشطة في مجالات التعليم , الصحّة و الشؤون الاجتماعيّة رسمت لنفسها هدف مساعدة المحتاجين لمنحهم حياة و مستقبلا أفضل' ,
+            secondTitle: ' أريج جمعيّة خيريّة ناشطة في مجالات التعليم , الصحّة و الشؤون الاجتماعيّة رسمت لنفسها هدف مساعدة المحتاجين لمنحهم حياة و مستقبلا أفضل',
             thirdTitle: 'لنخلق معًا مستقبلًا أفضل',
             rejoignezNous: 'انضم إلينا'
         },
@@ -80,9 +82,9 @@ export const components = {
             message17: 'Distribution de fauteuils roulants',
             message18: 'Distribution et prise en charge de médicaments',
             foundedTitle: 'Fondée',
-            donateTitle: 'membre de l\'association' 
+            donateTitle: 'membre de l\'association'
         },
-        
+
         ar: {
             bigTitle: 'من نحن؟',
             title: 'جمعية أريج',

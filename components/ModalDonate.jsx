@@ -178,20 +178,18 @@ const ModalDonate = ({ language, setLanguage }) => {
                     <option value='femme'>Femme</option>
                   </select>
                 </div>
-                {formData.typeDonate === "donate" ? (
-                  <div>
-                    <label htmlFor='amount' className='block mb-1'>
-                      {language === "ar" ? "كمية" : "montant"}
-                    </label>
-                    <input
-                      id='montant'
-                      name='montant'
-                      value={formData.montant}
-                      onChange={handleChange}
-                      className='w-full px-3 py-2 border rounded-md'
-                    />
-                  </div>
-                ) : null}
+                <div>
+                  <label htmlFor='amount' className='block mb-1'>
+                    {language === "ar" ? "المبلغ" : "montant"}
+                  </label>
+                  <input
+                    id='montant'
+                    name='montant'
+                    value={formData.montant}
+                    onChange={handleChange}
+                    className='w-full px-3 py-2 border rounded-md'
+                  />
+                </div>
                 <div>
                   <label htmlFor='email' className='block mb-1'>
                     {components.Models?.[language].email}
