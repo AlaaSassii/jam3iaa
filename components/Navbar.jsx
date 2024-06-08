@@ -48,78 +48,84 @@ const Navbar = ({ language, setLanguage }) => {
           <div className='flex gap-2 items-center text-xs'>
             <div>TELL : 54 253 094 |</div>
             <div className='flex space-x-4'>
-              <a
+              <Link
                 href='https://www.facebook.com/associationarij'
                 target='_blank'
                 className='text-white'
               >
                 <FaFacebook size={20} />
-              </a>
-              <a href='#' className='text-white'>
+              </Link>
+              <Link href='https://www.instagram.com/arij_association/'
+                  target='_blank' className='text-white'>
                 <AiFillInstagram size={20} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
         <div className='flex justify-between lg:justify-around  items-center bg-gray-800 z-100000'>
-          <img
-            src={"/images/logo.png"}
-            width={80}
-            height={50}
-            alt='logo'
-            className='p-1 mx-2'
-          />
+          <Link href="/home#home">
+            <img
+              src={"/images/logo.png"}
+              width={80}
+              height={50}
+              alt='logo'
+              className='p-1 mx-2'
+            />
+          </Link>
 
           <ul
-            className={` flex-col bg-neutral-800 p-10 gap-5 top-0 text-sm lg:text-base w-full lg:w-auto lg:flex-row lg:bg-transparent lg:p-2 lg:gap-0 lg:relative flex justify-center items-center text-rose-600 lg:text-rose-600 font-semibold fixed ${
+            className={` flex-col bg-neutral-800 p-10 gap-5 top-0 text-xs lg:text-sm w-full lg:w-auto lg:flex-row lg:bg-transparent lg:p-2 lg:gap-0 lg:relative flex justify-center items-center text-rose-600 lg:text-rose-600 font-semibold fixed ${
               isMenuOpen ? "" : "hidden"
             }`}
           >
-            <li className='cursor-pointer px-2 hover:text-black transition'>
+            <li className='cursor-pointer px-2 hover:text-white transition'>
               <Link href='/home#home'>
                 {components.Navbar?.[language]?.Accueil}
               </Link>
             </li>
-            <li className='cursor-pointer px-2 hover:text-black transition'>
+            <li className='cursor-pointer px-2 hover:text-white transition'>
               <Link href='/home#about'>
                 {components.Navbar?.[language]?.aProposNous}
               </Link>
             </li>
-            <li className='cursor-pointer px-2 hover:text-black transition'>
+            <li className='cursor-pointer px-2 hover:text-white transition'>
               <Link href='/home/events'>
                 {components.Navbar?.[language].Événements}
               </Link>
             </li>
-            <li className='cursor-pointer px-2 hover:text-black transition'>
+            <li className='cursor-pointer px-2 hover:text-white transition'>
               <Link href='/home/activities'>
                 {components.Navbar?.[language].Activités}
               </Link>
             </li>
-            <li className='cursor-pointer px-2 hover:text-black transition'>
+            <li className='cursor-pointer px-2 hover:text-white transition'>
               <Link href='/home#contact'>
                 {components.Navbar?.[language].contactezNous}
               </Link>
             </li>
 
-            <li className='cursor-pointer px-2 hover:text-black transition'>
+            <li className='cursor-pointer px-2 hover:text-white transition'>
               <Link href='/home/comptabilite'>
                 {components.Navbar?.[language].comptabilité}
               </Link>
             </li>
-            <div className={` projects`}>
-              <li className='cursor-pointer px-2 hover:text-black  transition relative '>
-                {components.Navbar?.[language].projects}
+            <div className={`projects`}>
+              <li className='cursor-pointer px-2 hover:text-white  transition relative '>
+                <Link href='/home/projects'>
+                  {components.Navbar?.[language].projects}
+                </Link>
               </li>
-
-              <ul className='absolute bg-white p-2 rounded projects_liste '>
-                {data?.map((p) => (
-                  <Link href={`/home/projects/${p.id}`}>
-                    <li className='hover:text-rose-500 hover:bg-rose-100 transition rounded p-2 text-center w-40 text-xs'>
-                      {p.title?.[language]}
-                    </li>
-                  </Link>
-                ))}
-              </ul>
+              <div className="hidden lg:block">
+                <ul className='absolute bg-white p-2 rounded projects_liste '>
+                  {data?.map((p) => (
+                    <Link href={`/home/projects/${p.id}`}>
+                      <li className='hover:text-rose-500 hover:bg-rose-100 transition rounded p-2 text-center w-40 text-xs'>
+                        {p.title?.[language]}
+                      </li>
+                    </Link>
+                  ))}
+                </ul>
+              </div>
             </div>
 
             <div

@@ -74,6 +74,7 @@ const Contact = ({ language }) => {
       className='flex flex-col items-center gap-4 mt-20 bg-rose-100 p-2'
       id='contact'
     >
+      
       <div className='font-bold text-lg md:text-4xl'>
         {components.contact?.[language].contactnous}
       </div>
