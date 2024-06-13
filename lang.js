@@ -138,6 +138,9 @@ export const components = {
 
             title4: 'Zomoroda Belaid',
             discription4: 'Trésorier et coordinateur général',
+
+            title5: "Hamadi Meftah",
+            discription5: "Trésorier"
         },
         ar: {
             bigTitle: 'المؤسسين',
@@ -153,7 +156,8 @@ export const components = {
 
             title4: '  زمردة بلعيد ',
             discription4: '  أمين مال ومنسق عام ',
-
+            title5: "حمادي مفتاح",
+            discription5: "أمين المال "
         }
     },
 

@@ -84,6 +84,24 @@ const Valunteer = ({ language }) => {
             </div>
           </div>
         </div>
+
+        <div className='flex flex-col items-center gap-3  cursor-pointer'>
+          <div className='w-72 h-72'>
+            <img
+              src='avatar/Capture.PNG'
+              className='object-cover w-full h-full'
+              alt=''
+            />
+          </div>
+          <div className='flex flex-col items-center gap-0'>
+            <div className='font-bold text-xs md:text-lg'>
+              {components.Valunteer?.[language].title5}
+            </div>
+            <div className='text-xs md:text-lg'>
+              {components.Valunteer?.[language].discription5}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
