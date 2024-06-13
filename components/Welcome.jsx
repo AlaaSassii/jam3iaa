@@ -6,9 +6,8 @@ import { components } from "../lang";
 const Welcome = ({ language }) => {
   return (
     <div className='w-full my-20 z-10'>
-      {/* sdfsdfsdf */}
       <div className='flex flex-col items-center gap-4'>
-        <div className='font-bold text-lg md:text-4xl'>
+        <div className='font-bold text-lg md:text-4xl '>
           {components.Welcome?.[language]?.title}
         </div>
 

@@ -14,8 +14,12 @@ const Valunteer = ({ language }) => {
 
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-10 mx-5 '>
         <div className='flex flex-col items-center gap-3 cursor-pointer'>
-          <div className="w-72 h-72">
-            <img src='avatar/11.jpg' className='object-cover w-full h-full' alt='' />
+          <div className='w-72 h-72'>
+            <img
+              src='avatar/11.jpg'
+              className='object-cover w-full h-full'
+              alt=''
+            />
           </div>
           <div className='flex flex-col items-center gap-0'>
             <div className='font-bold text-xs md:text-lg'>
@@ -28,8 +32,12 @@ const Valunteer = ({ language }) => {
         </div>
 
         <div className='flex flex-col items-center gap-3 cursor-pointer'>
-          <div className="w-72 h-72">
-            <img src='avatar/22.jpg' className='object-cover w-full h-full' alt='' />
+          <div className='w-72 h-72'>
+            <img
+              src='avatar/22.jpg'
+              className='object-cover w-full h-full'
+              alt=''
+            />
           </div>
           <div className='flex flex-col items-center gap-0'>
             <div className='font-bold text-xs md:text-lg'>
@@ -42,22 +50,12 @@ const Valunteer = ({ language }) => {
         </div>
 
         <div className='flex flex-col items-center gap-3  cursor-pointer'>
-          <div className="w-72 h-72">
-            <img src='avatar/33.jpg' className='object-cover w-full h-full' alt='' />
-          </div>
-          <div className='flex flex-col items-center gap-0'>
-            <div className='font-bold text-xs md:text-lg'>
-              {components.Valunteer?.[language].title3}
-            </div>
-            <div className='text-xs md:text-lg'>
-              {components.Valunteer?.[language].discription3}
-            </div>
-          </div>
-        </div>
-
-        <div className='flex flex-col items-center gap-3  cursor-pointer'>
-          <div className="w-72 h-72">
-            <img src='avatar/44.jpg' className='object-cover w-full h-full' alt='' />
+          <div className='w-72 h-72'>
+            <img
+              src='avatar/44.jpg'
+              className='object-cover w-full h-full'
+              alt=''
+            />
           </div>
           <div className='flex flex-col items-center gap-0'>
             <div className='font-bold text-xs md:text-lg'>
@@ -65,6 +63,24 @@ const Valunteer = ({ language }) => {
             </div>
             <div className='text-xs md:text-lg'>
               {components.Valunteer?.[language].discription4}
+            </div>
+          </div>
+        </div>
+
+        <div className='flex flex-col items-center gap-3  cursor-pointer'>
+          <div className='w-72 h-72'>
+            <img
+              src='avatar/33.jpg'
+              className='object-cover w-full h-full'
+              alt=''
+            />
+          </div>
+          <div className='flex flex-col items-center gap-0'>
+            <div className='font-bold text-xs md:text-lg'>
+              {components.Valunteer?.[language].title3}
+            </div>
+            <div className='text-xs md:text-lg'>
+              {components.Valunteer?.[language].discription3}
             </div>
           </div>
         </div>

@@ -55,13 +55,21 @@ export const components = {
 
 
     },
+    'partenaires': {
+        fr: {
+            title: "Partenaires"
+        },
+        ar: {
+            title: "شركاؤنا"
+        }
+    },
 
     'About': {
         fr: {
             bigTitle: 'Qui sommes-nous ?',
             title: 'Association Arij',
-            secondTitle: "Ariij est une association caritative active dans les domaines de l'éducation, de la santé et des affaires sociales. Elle s'est fixée pour objectif d'aider les nécessiteux afin de leur offrir une vie et un avenir meilleurs.",
-            paragraphe: "Arij est une association caritative créée en mars 2018 et qui œuvre dans le social, la santé et l'éducation. Elle est principalement destinée aux orphelins et aux enfants les plus démunis, qui font face à la pauvreté et à la maladie, mais également à tous les nécessiteux dont elle a la possibilité d'améliorer le quotidien, voire de changer la vie.",
+            secondTitle: "Arij est une association caritative créée en mars 2018 et qui œuvre dans le social, la santé et l'éducation. Elle est principalement destinée aux orphelins et aux enfants les plus démunis, qui font face à la pauvreté et à la maladie, mais également à tous les nécessiteux dont elle a la possibilité d'améliorer le quotidien, voire de changer la vie.",
+            paragraphe: "",
             title2: 'Nos missions',
             message1: "Soutien social et financier par le biais de donations ou de parrainages d'orphelins",
             message2: "Sorties récréatives, excursions et loisirs pour les membres de l’association et les orphelins parrainés",
@@ -82,14 +90,14 @@ export const components = {
             message17: 'Distribution de fauteuils roulants',
             message18: 'Distribution et prise en charge de médicaments',
             foundedTitle: 'Fondée',
-            donateTitle: 'membre de l\'association'
+            // donateTitle: 'membre de l\'association'
         },
 
         ar: {
             bigTitle: 'من نحن؟',
             title: 'جمعية أريج',
-            secondTitle: "أريج هي جمعية خيرية نشطة في مجالات التعليم والصحة والشؤون الاجتماعية. تهدف إلى مساعدة المحتاجين لتقديم حياة ومستقبل أفضل لهم.",
-            paragraphe: "أريج هي جمعية خيرية أُنشئت في مارس 2018 وتعمل في المجال الاجتماعي والصحي والتعليمي. تستهدف بشكل رئيسي الأيتام والأطفال الأكثر احتياجًا الذين يواجهون الفقر والمرض، وكذلك جميع المحتاجين الذين يمكنها تحسين حياتهم اليومية أو حتى تغييرها.",
+            secondTitle: "أريج هي مؤسسة خيرية اجتماعية تم إنشاؤها في 3 مارس 2018 في القصر الكبير. وهذه الجمعية هي جزء من وصية الدكتورة أريج ضيف الله رحمه الله.ورغبته الدائمة في رعاية ودعم الأيتام وذوي الاحتياجات الخاصة والمحتاجين بشكل عام. هناك مصادر متعددة للتمويل، مثل المساحات التجارية والاشتراكات من الشركات ورجال الأعمال والمشتركين. وحساب خاص على الفيسبوك لجمع التبرعات. كما حصلت الجمعية على الوثائق القانونية والإدارية التي ...وهذا يتيح لها أن تكون نشطة وتتطور على أرض الملعب.",
+            paragraphe: "",
             title2: 'مهامنا',
             message1: "الدعم الاجتماعي والمالي من خلال التبرعات أو كفالة الأيتام",
             message2: "رحلات ترفيهية ونزهات وأنشطة ترفيهية لأعضاء الجمعية والأيتام المكفولين",
@@ -110,41 +118,41 @@ export const components = {
             message17: 'توزيع الكراسي المتحركة',
             message18: 'توزيع وتغطية تكاليف الأدوية',
             foundedTitle: 'تأسست',
-            donateTitle: 'عضو في الجمعية'
+            // donateTitle: 'عضو في الجمعية'
         }
 
     },
 
     'Valunteer': {
         fr: {
-            bigTitle:'Fondateurs',
+            bigTitle: 'Fondateurs',
 
             title1: 'Dr. Mohamed Kamel Deif Allah',
             discription1: 'Président de l\'association',
 
-            title2: 'Dr. Rabie Galla',
-            discription2: 'Chargé de la santé',
+            title2: 'Naïla Haj Mabrouk',
+            discription2: 'Secrétaire général',
 
-            title3: 'Zomoroda Belaid',
-            discription3: 'Trésorier et coordinateur général',
+            title3: 'Dr. Rabie Galla',
+            discription3: 'Chargé de la santé',
 
-            title4: 'Naïla Haj Mabrouk',
-            discription4: 'Secrétaire général',
+            title4: 'Zomoroda Belaid',
+            discription4: 'Trésorier et coordinateur général',
         },
         ar: {
-            bigTitle:'المؤسسين',
+            bigTitle: 'المؤسسين',
 
             title1: 'الدكتور محمد كمال ضيف الله  ',
             discription1: 'رئيس الجمعية ',
 
-            title2: '   الدكتور ربيع قلالة ',
-            discription2: ' مكلف بالصحة ',
+            title2: '  نائلة الحاج مبارك ',
+            discription2: ' كاتب عام ',
 
-            title3: '  زمردة بلعيد ',
-            discription3: '  أمين مال ومنسق عام ',
+            title3: '   الدكتور ربيع قلالة ',
+            discription3: ' مكلف بالصحة ',
 
-            title4: '  نائلة الحاج مبارك ',
-            discription4: ' كاتب عام ',
+            title4: '  زمردة بلعيد ',
+            discription4: '  أمين مال ومنسق عام ',
 
         }
     },
@@ -163,10 +171,10 @@ export const components = {
 
     'Events': {
         fr: {
-            title: 'les trois derniers événements',
+            title: 'Projets en cours',
         },
         ar: {
-            title: 'آخر ثلاثة أحداث'
+            title: 'مشاريع في طور الانجاز'
         }
     },
 
