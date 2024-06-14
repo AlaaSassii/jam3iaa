@@ -55,15 +55,18 @@ const Navbar = ({ language, setLanguage }) => {
               >
                 <FaFacebook size={20} />
               </Link>
-              <Link href='https://www.instagram.com/arij_association/'
-                  target='_blank' className='text-white'>
+              <Link
+                href='https://www.instagram.com/arij_association/'
+                target='_blank'
+                className='text-white'
+              >
                 <AiFillInstagram size={20} />
               </Link>
             </div>
           </div>
         </div>
         <div className='flex justify-between lg:justify-around  items-center bg-gray-800 z-100000'>
-          <Link href="/home#home">
+          <Link href='/home#home'>
             <img
               src={"/images/logo.png"}
               width={80}
@@ -74,7 +77,7 @@ const Navbar = ({ language, setLanguage }) => {
           </Link>
 
           <ul
-            className={` flex-col bg-neutral-800 p-10 gap-5 top-0 text-xs lg:text-sm w-full lg:w-auto lg:flex-row lg:bg-transparent lg:p-2 lg:gap-0 lg:relative flex justify-center items-center text-rose-600 lg:text-rose-600 font-semibold fixed ${
+            className={` flex-col bg-neutral-800 p-10 gap-5 top-0 text-xs lg:text-sm w-full lg:w-auto lg:flex-row lg:bg-transparent lg:p-2 lg:gap-0 lg:relative flex justify-center items-center text-rose-600 lg:text-rose-600 font-semibold fixed z-50 ${
               isMenuOpen ? "" : "hidden"
             }`}
           >
@@ -115,7 +118,7 @@ const Navbar = ({ language, setLanguage }) => {
                   {components.Navbar?.[language].projects}
                 </Link>
               </li>
-              <div className="hidden lg:block">
+              <div className='hidden lg:block'>
                 <ul className='absolute bg-white p-2 rounded projects_liste '>
                   {data?.map((p) => (
                     <Link href={`/home/projects/${p.id}`}>

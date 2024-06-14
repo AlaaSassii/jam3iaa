@@ -38,6 +38,40 @@ const page = () => {
     <>
       <Navbar language={language} setLanguage={setLanguage} />
       <div className=' pt-2'>
+        <h1>2023</h1>
+        <div className='flex flex-col md:flex-row gap-4 '>
+          <Link
+            href={"/comtabilite/2023(1).PNG"}
+            target='_blank'
+            className='text-pink-700 block decoration-inherit underline p-2'
+          >
+            <img src='/comtabilite/2023(1).PNG' alt='' />
+          </Link>
+
+          <Link
+            target='_blank'
+            href={"/comtabilite/2023(2).PNG"}
+            className='text-pink-700 block decoration-inherit underline p-2'
+          >
+            <img src='/comtabilite/2023(2).PNG' alt='' />
+          </Link>
+
+          <Link
+            target='_blank'
+            href={"/comtabilite/2023(3).PNG"}
+            className='text-pink-700 block decoration-inherit underline p-2'
+          >
+            <img src='/comtabilite/2023(3).PNG' alt='' />
+          </Link>
+
+          <Link
+            target='_blank'
+            href={"/comtabilite/2023(4).PNG"}
+            className='text-pink-700 block decoration-inherit underline p-2'
+          >
+            <img src='/comtabilite/2023(4).PNG' alt='' />
+          </Link>
+        </div>
         <h1 className='text-4xl'>2022</h1>
         <div className='flex flex-col md:flex-row gap-4 '>
           <Link

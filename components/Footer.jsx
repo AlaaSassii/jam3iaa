@@ -72,10 +72,16 @@ const Footer = ({ language }) => {
                   {components.footer?.[language]?.Connectez}
                 </h3>
                 <div className='flex space-x-4'>
-                  <a href='#' className='text-rose-400 hover:text-rose-600'>
+                  <a
+                    href='https://www.facebook.com/associationarij'
+                    className='text-rose-400 hover:text-rose-600'
+                  >
                     <FaFacebook size={25} />
                   </a>
-                  <a href='#' className='text-rose-400 hover:text-rose-600'>
+                  <a
+                    href='https://www.instagram.com/arij_association/'
+                    className='text-rose-400 hover:text-rose-600'
+                  >
                     <AiFillInstagram size={25} />
                   </a>
                   <a href='#' className='text-rose-400 hover:text-rose-600'>
@@ -183,7 +189,10 @@ const Footer = ({ language }) => {
                 >
                   <FaFacebook size={25} />
                 </a>
-                <a href='#' className='text-rose-400 hover:text-rose-600'>
+                <a
+                  href='https://www.instagram.com/arij_association/'
+                  className='text-rose-400 hover:text-rose-600'
+                >
                   <AiFillInstagram size={25} />
                 </a>
               </div>

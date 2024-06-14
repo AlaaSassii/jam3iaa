@@ -12,7 +12,7 @@ const About = ({ language }) => {
       </div>
 
       <div className='mx-[5%]  bg-rose-100 rounded-2xl p-3'>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
           <div className=' w-[90%] m-auto'>
             <img
               src='about/group-people-volunteering-foodbank-poor-people.jpg'
@@ -38,24 +38,25 @@ const About = ({ language }) => {
                 {components.About?.[language].paragraphe}{" "}
               </p>
             </div>
-
-            
           </div>
         </div>
 
-        <div className="p-2 md:p-5 mt-3">
-          <div className={`flex flex-col md:flex-row   gap-5 items-center justify-around ${
+        <div className='p-2 md:p-5 mt-3'>
+          <div
+            className={`flex flex-col md:flex-row   gap-5 items-center justify-around ${
               language == "ar" ? "text-end" : "text-start"
-            }`}>
-
+            }`}
+          >
             <div className={`flex flex-col gap-2  `}>
               <div className='font-bold text-lg md:text-2xl  '>
                 {components.About?.[language].title2}
               </div>
-              
-              <ul className={`text-xs md:text-sm ml-5 gap-2   ${
-              language == "ar" ? "" : "circle-list gap-4"
-              }`} >
+
+              <ul
+                className={`text-xs md:text-sm ml-5 gap-2   ${
+                  language == "ar" ? "" : "circle-list gap-4"
+                }`}
+              >
                 <li>{components.About?.[language].message1}</li>
                 <li>{components.About?.[language].message2}</li>
                 <li>{components.About?.[language].message3}</li>
@@ -74,7 +75,6 @@ const About = ({ language }) => {
                 <li>{components.About?.[language].message16}</li>
                 <li>{components.About?.[language].message17}</li>
                 <li>{components.About?.[language].message18}</li>
-                
               </ul>
 
               {/*ssssssss */}
@@ -86,17 +86,13 @@ const About = ({ language }) => {
                 <div>{components.About?.[language].foundedTitle}</div>
               </div>
               <div className='flex flex-col'>
-                <div className='font-bold text-4xl text-rose-500'>20</div>
-                <div>{components.About?.[language].donateTitle}</div>
+                {/* <div className='font-bold text-4xl text-rose-500'>20</div> */}
+                {/* <div>{components.About?.[language].donateTitle}</div> */}
               </div>
             </div>
-
           </div>
         </div>
-        
       </div>
-
-
     </div>
   );
 };

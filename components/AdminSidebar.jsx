@@ -43,7 +43,11 @@ const AdminSidebar = () => {
             to='/admin/overview'
             icon={MdDashboard}
           />
-          <AdminSidebarLink title='Events' to='/admin/events' icon={MdEvent} />
+          <AdminSidebarLink
+            title='Projets en cours'
+            to='/admin/events'
+            icon={MdEvent}
+          />
           <AdminSidebarLink
             title='Activity'
             to='/admin/activity'
