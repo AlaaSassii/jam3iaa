@@ -14,6 +14,20 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Home = ({ language }) => {
   return (
+<<<<<<< HEAD
+    <div className="w-full bg-black h-screen home-container" id="home">
+      <div
+        className="
+                text-center
+                px-2
+                md:px-20
+                w-full
+                h-screen
+                flex
+                flex-col
+                items-center
+                justify-center"
+=======
     <>
       <Swiper
         spaceBetween={30}
@@ -94,18 +108,19 @@ const HomeContainer2 = ({ language }) => {
             flex-col
             items-center
             justify-center'
+>>>>>>> 00c6d56fb70bbcd6ec1a48dba331a3e443b00de2
       >
-        <h1 className=' text-white text-[30px]  md:text-[50px] font-extrabold'>
+        <h1 className=" text-white text-[30px]  md:text-[50px] font-extrabold">
           {components.HomeC?.[language].Title}
         </h1>
-        <p className='text-neutral-300 font-bold mt-2 '>
+        <p className="text-neutral-300 font-bold mt-2 ">
           {components.HomeC?.[language].secondTitle}
         </p>
-        <p className='text-neutral-300 font-bold mt-2'>
+        <p className="text-neutral-300 font-bold mt-2">
           {components.HomeC?.[language].thirdTitle}
         </p>
         <button
-          className='p-3 text-sm md:text-base rounded-xl bg-rose-500 text-white mt-4 font-bold cursor-pointer hover:bg-rose-600 flex items-center gap-3'
+          className="p-3 text-sm md:text-base rounded-xl bg-rose-500 text-white mt-4 font-bold cursor-pointer hover:bg-rose-600 flex items-center gap-3"
           onClick={() => {
             document.getElementById("my_modal_1").showModal();
           }}
