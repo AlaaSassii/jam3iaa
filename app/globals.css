@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
@@ -10,26 +10,24 @@
 }
 
 .home-container {
-    width: 100%;
-    height: 100vh;
-    background-color: #f00; /* fallback color */
-    background-image: url('/slide/1.jpg');
-    background-size: cover;
-    background-position: center;
-    
-    background-color: rgba(39, 34, 34, 0.5); /* Red color with 50% opacity */
-  }
+  width: 100%;
+  height: 100vh;
+  background-color: #f00; /* fallback color */
+  background-image: url("/slide/1.jpg");
+  background-size: cover;
+  background-position: center;
 
-.rejoindre{
+  background-color: rgba(39, 34, 34, 0.5); /* Red color with 50% opacity */
+}
 
+.rejoindre {
   width: 100%;
   background-color: #f00; /* fallback color */
-  background-image: url('/slide/2.jpg');
+  background-image: url("/slide/2.jpg");
   background-size: cover;
   background-position: center;
   background-color: rgba(39, 34, 34, 0.5); /* Red color with 50% opacity */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
 
 .circle-list {
@@ -40,15 +38,15 @@
   margin-bottom: 0.2rem; /* Adjust the value as needed */
 }
 
-.projects{
+.projects {
   display: inline-block;
   position: relative;
 }
 
-.projects:hover .projects_liste{
+.projects:hover .projects_liste {
   display: block;
 }
 
-.projects_liste{
+.projects_liste {
   display: none;
 }
