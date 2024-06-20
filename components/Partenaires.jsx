@@ -33,17 +33,20 @@ const partenaires = [
 ];
 const Partenaires = ({ language }) => {
   return (
-    <div className='w-full my-20 z-10'>
-      <div className='flex flex-col items-center gap-4'>
-        <div className='font-bold text-lg md:text-4xl '>
+    <div className="w-full my-20 z-10">
+      <div className="flex flex-col items-center gap-4">
+        <div className="font-bold text-lg md:text-4xl ">
           {components.partenaires?.[language]?.title}
         </div>
 
-        <div className='grid grid-cols-2 md:grid-cols-4 text-center gap-4 md:gap-5 mx-2 z-10'>
+        <div className="grid grid-cols-2 md:grid-cols-4 text-center gap-4 md:gap-5 mx-2 z-10">
           {partenaires.map((p, i) => (
-            <div className='flex flex-col items-center gap-3 p-4  bg-neutral-100 rounded-lg cursor-pointer shadow-xl transition hover:-translate-y-2 hover:bg-neutral-200 relative z-10'>
-              <img className='w-20 md:w-32' src={p.image} alt='' />
-              <div className='font-semibold'>{p.name}</div>
+            <div
+              key={p.name}
+              className="flex flex-col items-center gap-3 p-4  bg-neutral-100 rounded-lg cursor-pointer shadow-xl transition hover:-translate-y-2 hover:bg-neutral-200 relative z-10"
+            >
+              <img className="w-20 md:w-32" src={p.image} alt="" />
+              <div className="font-semibold">{p.name}</div>
             </div>
           ))}
         </div>

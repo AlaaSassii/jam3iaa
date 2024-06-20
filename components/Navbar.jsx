@@ -33,46 +33,46 @@ const Navbar = ({ language, setLanguage }) => {
   return (
     <>
       <ModalDonate language={language} />
-      <div className='z-50 '>
-        <div className='bg-rose-500 px-2 lg:px-20 text-white py-2 flex justify-between items-center text-xs lg:text-base flex-col lg:flex-row gap-2 '>
-          <div className='text-xs'>
+      <div className="z-50 ">
+        <div className="bg-rose-500 px-2 lg:px-20 text-white py-2 flex justify-between items-center text-xs lg:text-base flex-col lg:flex-row gap-2 ">
+          <div className="text-xs">
             Email : associationarij.contact@gmail.com{" "}
           </div>
 
-          <div className='text-xs'>
+          <div className="text-xs">
             Adresse : Avenue association arij 4060 kalaa kebirasousse{" "}
           </div>
 
-          <div className='text-xs'>RIB : 17503000000265043581 </div>
+          <div className="text-xs">RIB : 17503000000265043581 </div>
 
-          <div className='flex gap-2 items-center text-xs'>
+          <div className="flex gap-2 items-center text-xs">
             <div>TELL : 54 253 094 |</div>
-            <div className='flex space-x-4'>
+            <div className="flex space-x-4">
               <Link
-                href='https://www.facebook.com/associationarij'
-                target='_blank'
-                className='text-white'
+                href="https://www.facebook.com/associationarij"
+                target="_blank"
+                className="text-white"
               >
                 <FaFacebook size={20} />
               </Link>
               <Link
-                href='https://www.instagram.com/arij_association/'
-                target='_blank'
-                className='text-white'
+                href="https://www.instagram.com/arij_association/"
+                target="_blank"
+                className="text-white"
               >
                 <AiFillInstagram size={20} />
               </Link>
             </div>
           </div>
         </div>
-        <div className='flex justify-between lg:justify-around  items-center bg-gray-800 z-100000'>
-          <Link href='/home#home'>
+        <div className="flex justify-between lg:justify-around  items-center bg-gray-800 z-100000">
+          <Link href="/home#home">
             <img
               src={"/images/logo.png"}
               width={80}
               height={50}
-              alt='logo'
-              className='p-1 mx-2'
+              alt="logo"
+              className="p-1 mx-2"
             />
           </Link>
 
@@ -81,48 +81,48 @@ const Navbar = ({ language, setLanguage }) => {
               isMenuOpen ? "" : "hidden"
             }`}
           >
-            <li className='cursor-pointer px-2 hover:text-white transition'>
-              <Link href='/home#home'>
+            <li className="cursor-pointer px-2 hover:text-white transition">
+              <Link href="/home#home">
                 {components.Navbar?.[language]?.Accueil}
               </Link>
             </li>
-            <li className='cursor-pointer px-2 hover:text-white transition'>
-              <Link href='/home#about'>
+            <li className="cursor-pointer px-2 hover:text-white transition">
+              <Link href="/home#about">
                 {components.Navbar?.[language]?.aProposNous}
               </Link>
             </li>
-            <li className='cursor-pointer px-2 hover:text-white transition'>
-              <Link href='/home/events'>
+            <li className="cursor-pointer px-2 hover:text-white transition">
+              <Link href="/home/events">
                 {components.Navbar?.[language].Événements}
               </Link>
             </li>
-            <li className='cursor-pointer px-2 hover:text-white transition'>
-              <Link href='/home/activities'>
+            <li className="cursor-pointer px-2 hover:text-white transition">
+              <Link href="/home/activities">
                 {components.Navbar?.[language].Activités}
               </Link>
             </li>
-            <li className='cursor-pointer px-2 hover:text-white transition'>
-              <Link href='/home#contact'>
+            <li className="cursor-pointer px-2 hover:text-white transition">
+              <Link href="/home#contact">
                 {components.Navbar?.[language].contactezNous}
               </Link>
             </li>
 
-            <li className='cursor-pointer px-2 hover:text-white transition'>
-              <Link href='/home/comptabilite'>
+            <li className="cursor-pointer px-2 hover:text-white transition">
+              <Link href="/home/comptabilite">
                 {components.Navbar?.[language].comptabilité}
               </Link>
             </li>
             <div className={`projects`}>
-              <li className='cursor-pointer px-2 hover:text-white  transition relative '>
-                <Link href='/home/projects'>
+              <li className="cursor-pointer px-2 hover:text-white  transition relative ">
+                <Link href="/home/projects">
                   {components.Navbar?.[language].projects}
                 </Link>
               </li>
-              <div className='hidden lg:block'>
-                <ul className='absolute bg-white p-2 rounded projects_liste '>
+              <div className="hidden lg:block">
+                <ul className="absolute bg-white p-2 rounded projects_liste ">
                   {data?.map((p) => (
-                    <Link href={`/home/projects/${p.id}`}>
-                      <li className='hover:text-rose-500 hover:bg-rose-100 transition rounded p-2 text-center w-40 text-xs'>
+                    <Link href={`/home/projects/${p.id}`} key={p.id}>
+                      <li className="hover:text-rose-500 hover:bg-rose-100 transition rounded p-2 text-center w-40 text-xs">
                         {p.title?.[language]}
                       </li>
                     </Link>
@@ -132,7 +132,7 @@ const Navbar = ({ language, setLanguage }) => {
             </div>
 
             <div
-              className=' lg:hidden bg-white text-sm  p-2 my-2 rounded-2xl font-semibold cursor-pointer hover:text-rose-500 '
+              className=" lg:hidden bg-white text-sm  p-2 my-2 rounded-2xl font-semibold cursor-pointer hover:text-rose-500 "
               onClick={() => {
                 document.getElementById("my_modal_2").showModal();
               }}
@@ -141,22 +141,22 @@ const Navbar = ({ language, setLanguage }) => {
             </div>
             <IoMdClose
               size={30}
-              className='lg:hidden absolute top-5 right-5 '
+              className="lg:hidden absolute top-5 right-5 "
               onClick={toggleMenu}
             />
           </ul>
           <select
-            className='fixed right-0 top-[50%] py-2 bg-rose-500 text-white z-30'
+            className="fixed right-0 top-[50%] py-2 bg-rose-500 text-white z-30"
             defaultValue={language}
             onChange={(e) => {
               setLanguage(e.target.value);
             }}
           >
-            <option value='fr'>Fr</option>
-            <option value='ar'>Ar</option>
+            <option value="fr">Fr</option>
+            <option value="ar">Ar</option>
           </select>
           <div
-            className='hidden lg:block bg-white text-sm  p-2 my-2 rounded-2xl font-semibold cursor-pointer hover:text-rose-500 '
+            className="hidden lg:block bg-white text-sm  p-2 my-2 rounded-2xl font-semibold cursor-pointer hover:text-rose-500 "
             onClick={() => {
               document.getElementById("my_modal_2").showModal();
             }}
@@ -165,7 +165,7 @@ const Navbar = ({ language, setLanguage }) => {
           </div>
 
           <IoMenu
-            className='lg:hidden text-white mx-2'
+            className="lg:hidden text-white mx-2"
             onClick={toggleMenu}
             size={35}
           />
