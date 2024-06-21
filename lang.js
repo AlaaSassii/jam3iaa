@@ -39,14 +39,14 @@ export const components = {
 
     'Welcome': {
         fr: {
-            title: 'Les changements à faire ',
+            title: 'Les projets les plus importants',
             titleCart1: 'AIDE SOCIAL',
             titleCart2: 'ARIJ ACADEMY',
             titleCart3: 'SANTE',
             titleCart4: 'PARRAINAGE D\’ORPHELINS'
         },
         ar: {
-            title: 'التغييرات التي يجب القيام بها',
+            title: 'أهم المشاريع',
             titleCart1: 'المساعدة الاجتماعية',
             titleCart2: 'أكاديمية أريج',
             titleCart3: 'الصحة',
@@ -137,7 +137,7 @@ export const components = {
             discription3: 'Chargé de la santé',
 
             title4: 'Zomoroda Belaid',
-            discription4: 'Trésorier et coordinateur général',
+            discription4: 'coordinateur général',
 
             title5: "Hamadi Meftah",
             discription5: "Trésorier"
@@ -155,7 +155,7 @@ export const components = {
             discription3: ' مكلف بالصحة ',
 
             title4: '  زمردة بلعيد ',
-            discription4: '  أمين مال ومنسق عام ',
+            discription4: 'منسق عام ',
             title5: "حمادي مفتاح",
             discription5: "أمين المال "
         }

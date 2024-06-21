@@ -19,7 +19,7 @@ const Home = ({ language }) => {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 6000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -60,10 +60,10 @@ const HomeContainer1 = ({ language }) => {
         <h1 className=' text-white text-[30px]  md:text-[50px] font-extrabold'>
           {components.HomeC?.[language].Title}
         </h1>
-        <p className='text-neutral-300 font-bold mt-2 '>
+        <p className='text-white font-bold mt-2 '>
           {components.HomeC?.[language].secondTitle}
         </p>
-        <p className='text-neutral-300 font-bold mt-2'>
+        <p className='text-white font-bold mt-2'>
           {components.HomeC?.[language].thirdTitle}
         </p>
         <button
@@ -98,10 +98,10 @@ const HomeContainer2 = ({ language }) => {
         <h1 className=' text-white text-[30px]  md:text-[50px] font-extrabold'>
           {components.HomeC?.[language].Title}
         </h1>
-        <p className='text-neutral-300 font-bold mt-2 '>
+        <p className='text-white font-bold mt-2 '>
           {components.HomeC?.[language].secondTitle}
         </p>
-        <p className='text-neutral-300 font-bold mt-2'>
+        <p className='text-white font-bold mt-2'>
           {components.HomeC?.[language].thirdTitle}
         </p>
         <button
@@ -137,10 +137,10 @@ const HomeContainer3 = ({ language }) => {
         <h1 className=' text-white text-[30px]  md:text-[50px] font-extrabold'>
           {components.HomeC?.[language].Title}
         </h1>
-        <p className='text-neutral-300 font-bold mt-2 '>
+        <p className='text-white font-bold mt-2 '>
           {components.HomeC?.[language].secondTitle}
         </p>
-        <p className='text-neutral-300 font-bold mt-2'>
+        <p className='text-white font-bold mt-2'>
           {components.HomeC?.[language].thirdTitle}
         </p>
         <button

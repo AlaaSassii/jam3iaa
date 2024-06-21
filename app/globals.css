@@ -33,7 +33,7 @@
   width: 100%;
   height: 100vh;
   background-color: #f00; /* fallback color */
-  background-image: url("/slide/3.jpg");
+  background-image: url("/slide/background3.jpg");
   background-size: cover;
   background-position: center;
 
