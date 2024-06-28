@@ -349,6 +349,82 @@
           "fr": "Avril 2018"
         },
         "activities": []
+      },
+      {
+        "id": 10,
+        "image":"/projectsImages/9.png",
+        "title": {
+          "fr": "Projet éducatif",
+          "ar": "مشروع تعليم"
+        },
+        "description": [
+          {
+            "fr":"Le domaine éducatif de la prestigieuse Association ARIJ a montré son importance en termes d'activités qui y sont réalisées, et à cet égard nous mentionnons certaines des activités.",
+            "ar": "للمجال التّعليمي التربوي في جمعيّة أريج مرموقة تجلّت من خلال إبلائه أهميّة من حيث الأنشطة المنجزة فيه ونذكر في الصدّد بعض الأنشطة"
+          }, {
+            "fr": "L’association ARIJ a souhaité préparer et rénover certaines écoles primaires et collèges, comme l’école Bou Arada, l’école Zitouna et le collège Ajami Ben Saad, afin d’améliorer les conditions d’apprentissage.",
+            "ar": "حرصت جمعيّة أريج على تهيئة بعض المدارس الابتدائيّة و الإعداديّة و ترميمها كمدرسة بوعرادة و مدرسة الزيتونة و المدرسة الإعداديّة العجمي بن سعد لغاية تحسين ظروف التّعلم"
+          }, {
+            "fr": "Pour valoriser ces activités, l'ARIJ a conclu une convention de partenariat avec la Délégation Régionale à l'Éducation et a créé le projet INSTITUT FRANCAIS sous le titre Éducation.",
+            "ar":"ولتعزيز هذه الأنشطة، أبرمت أريج اتفاقية شراكة مع المندوبية الإقليمية للتعليم وأنشأت مشروع المعهد الفرنسي تحت عنوان التعليم"
+          }
+        ],
+        "starDate": {
+          "ar": "جويلية 2018",
+          "fr": "jul 2018"
+        },
+        "activities": [ {
+            "fr": {
+              "name": "Cours de formation",
+              "description": ""
+            },
+            "ar": {
+              "name": "دورات تكوينيّة",
+              "description":""
+            }
+          },
+          {
+            "fr": {
+              "name": "Activités culturelles et récréatives",
+              "description": ""
+            },
+            "ar": {
+              "name": "أنشطة ثقافيّة و ترفيهيّة",
+              "description":""
+            }
+          },
+          {
+            "fr": {
+              "name":"Cours d'éducation pour adultes",
+              "description": ""
+            },
+            "ar": {
+              "name": "دروس تعليم الكبار",
+              "description":""
+            }
+          },
+          {
+            "fr": {
+              "name":"Cours de sensibilisation pour les mamans",
+              "description": ""
+            },
+            "ar": {
+              "name": "حصص توعويّة للأمهات",
+              "description":""
+            }
+          },
+          {
+            "fr": {
+              "name": "Restauration des établissements d'enseignement",
+              "description": ""
+            },
+            "ar": {
+              "name":"ترميم مؤسّسات تربويّة",
+              "description":""
+            }
+          }
+
+        ]
       }
     ]
   }
