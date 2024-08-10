@@ -35,28 +35,18 @@ const Footer = ({ language }) => {
                 </h3>
                 <ul className="list-none p-0">
                   <li className="mb-2">
-                    <Link href="/home#home">
-                      {components.Navbar?.[language]?.Accueil}
-                    </Link>
-                  </li>
-                  <li className="mb-2">
                     <Link href="/home#about">
                       {components.Navbar?.[language]?.aProposNous}
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/home/events">
-                      {components.Navbar?.[language].Événements}
-                    </Link>
-                  </li>
-                  <li className="mb-2">
-                    <Link href="/home/activities">
-                      {components.Navbar?.[language].Activités}
-                    </Link>
-                  </li>
-                  <li className="mb-2">
                     <Link href="/home#contact">
                       {components.Navbar?.[language].contactezNous}
+                    </Link>
+                  </li>
+                  <li className="mb-2">
+                    <Link href="/home/events">
+                      {components.Navbar?.[language].Événements}
                     </Link>
                   </li>
 
@@ -150,24 +140,10 @@ const Footer = ({ language }) => {
                 {/* <li className='mb-2'>
                   <a href='#home'>{components.Navbar?.[language]?.Accueil}</a>
                 </li> */}
-                <li className="mb-2">
-                  <Link href="/home#home">
-                    {components.Navbar?.[language]?.Accueil}
-                  </Link>
-                </li>
+
                 <li className="mb-2">
                   <Link href="/home#about">
                     {components.Navbar?.[language]?.aProposNous}
-                  </Link>
-                </li>
-                <li className="mb-2">
-                  <Link href="/home/events">
-                    {components.Navbar?.[language].Événements}
-                  </Link>
-                </li>
-                <li className="mb-2">
-                  <Link href="/home/activities">
-                    {components.Navbar?.[language].Activités}
                   </Link>
                 </li>
                 <li className="mb-2">
@@ -176,13 +152,14 @@ const Footer = ({ language }) => {
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link href="/home/projects">
-                    {components.Navbar?.[language].projects}
+                  <Link href="/home/events">
+                    {components.Navbar?.[language].Événements}
                   </Link>
                 </li>
+
                 <li className="mb-2">
-                  <Link href="/home/comptabilite">
-                    {components.Navbar?.[language].comptabilité}
+                  <Link href="/home/projects">
+                    {components.Navbar?.[language].projects}
                   </Link>
                 </li>
               </ul>
